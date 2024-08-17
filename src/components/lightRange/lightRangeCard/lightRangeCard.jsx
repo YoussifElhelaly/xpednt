@@ -1,0 +1,15 @@
+export default function LightRangeCard ({img , title}) {
+    return(
+        <div className="col col--xs-6 col--lg-3" data-filter-value="Dental Hygienists,Periodontist,Dental Student,Orthodontist,Cosmetic Dentist">
+
+        <a href="/loupes-lights/lights/total-pure-total-intense/" className="filter__item">
+            <div className="filter__item__image lazy lazy--bg lazy--loaded" style={{backgroundImage:`url(${img})`}}></div>
+
+            <div className="filter__item__text">
+                <span className="filter__item__title">Total Pure &amp; Total Intense</span>
+            </div>
+        </a>
+    </div>
+
+    )
+}

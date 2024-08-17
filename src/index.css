@@ -1,13 +1,55 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.nav__topmenu__sub li a + span.nav__topmenu__sub-image  {
+  background-position: right !important;
+  background-size: cover !important;
+}
+.nav__topmenu__sub li a[title="Dental"] + span.nav__topmenu__sub-image {
+    background: url("./assets/media/onwft3k0/dental_header_013c2d.jpg");
+}
+.nav__topmenu__sub li a[title="Hygienist"] + span.nav__topmenu__sub-image {
+  background: url("./assets/media/51dfj4fw/professions-ess-hygienist-header_02-20238e56.jpg");
+}
+.nav__topmenu__sub li a[title="Surgical"] + span.nav__topmenu__sub-image {
+  background: url("./assets/media/taqbdta4/2023-11-medical-header65b8.jpg");
+}
+.nav__topmenu__sub li a[title="Student"] + span.nav__topmenu__sub-image {
+  background: url("./assets/media/tagndumv/professions-ess-student-headerca62.jpg");
+}
+.nav__topmenu__sub li a[title="Others"] + span.nav__topmenu__sub-image {
+  background: url("./assets/media/4pfnzmmy/2023-11-others-headerab60.jpg");
+}
+.nav__topmenu__sub li a[title="Loupes"] + span.nav__topmenu__sub-image {
+  background: url("./assets/media/hoki0k5r/loupes_header_01d4d6.jpg");
+}
+.nav__topmenu__sub li a[title="Magnifications"] + span.nav__topmenu__sub-image {
+  background: url("./assets/media/tbvb0ku0/mag_header_01bef3.jpg");
+}
+.nav__topmenu__sub li a[title="Optics & safety"] + span.nav__topmenu__sub-image {
+  background: url("./assets/media/2z2ff5zt/cases_header_01abb8.jpg");
+}
+.nav__topmenu__sub li a[title="Lights"] + span.nav__topmenu__sub-image {
+  background: url("./assets/media/ew1fahpb/2023-11-light-header5e33.jpg");
+}
+.nav__topmenu__sub li a[title="Accessories"] + span.nav__topmenu__sub-image {
+  background: url("./assets/media/n3abrceb/2023-11-accesories-header051b.jpg");
+}
+.nav__topmenu__sub li a[title="Warranty"] + span.nav__topmenu__sub-image {
+  background: url("./assets/media/3szmys2m/warranty_header_015d4c.jpg");
+}
+.nav__topmenu__sub li a[title="Career"] + span.nav__topmenu__sub-image {
+  background: url("./assets/media/nnrjufz0/2022-04-career-headere680.jpg");
+}
+.nav__topmenu__sub li a[title="Testimonials"] + span.nav__topmenu__sub-image {
+  background: url("./assets/media/2z2ff5zt/cases_header_01abb8.jpg");
+}
+.nav__topmenu__sub li a[title="News & Events"] + span.nav__topmenu__sub-image {
+  background: url("./assets/media/tukhn0ik/news_header_023fda.jpg");
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html {
+  scroll-behavior: smooth;
 }
+
+/* 
+style="background-image: url(media/nnrjufz0/2022-04-career-headere680.jpg?anchor=center&amp;mode=crop&amp;width=250&amp;height=275&amp;quality=76&amp;rnd=132931288620300000)"
+style="background-image: url(media/2z2ff5zt/cases_header_01abb8.jpg?crop=0.3942708333333334,0,0.0001090116279070153,0.00072674418604647031&amp;cropmode=percentage&amp;width=250&amp;height=275&amp;quality=76&amp;rnd=133408506636130000)"
+style="background-image: url(media/tukhn0ik/news_header_023fda.jpg?anchor=center&amp;mode=crop&amp;width=250&amp;height=275&amp;quality=76&amp;rnd=133408508451770000)" */
