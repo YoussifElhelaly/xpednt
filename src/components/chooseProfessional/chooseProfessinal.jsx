@@ -16,10 +16,8 @@ export default function Professional() {
             <div class="col col--md-12 gateway__wrap">
                 <div class="gateway__links">
                     <ProfessionalCard img={dentalImg} title={"Dental"}/>
-                    <ProfessionalCard img={hygienistImg} title={"Hygienist"}/>
                     <ProfessionalCard img={surgicalImg} title={"Surgical"}/>
                     <ProfessionalCard img={studentImg} title={"Student"}/>
-                    <ProfessionalCard img={othersImg} title={"Others"}/>
                 </div>
             </div>
         </div>

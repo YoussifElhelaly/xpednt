@@ -14,7 +14,7 @@ export default function AccessoriesPage() {
                         <h2>
                             Loupe Accessories
                         </h2>
-                        <p>The ExamVision range of loupe and light accessories adds unique design features and functionality to your loupes.</p>
+                        <p>The Xpedent range of loupe and light accessories adds unique design features and functionality to your loupes.</p>
                     </header>
                 </div>
             </section>
@@ -30,13 +30,13 @@ export default function AccessoriesPage() {
                                 <h3>Visionshield MAX<br/>Protective screen, full-face visor in XXL</h3>
             
                                 <div class="rich-text">
-                                    <p>The new Visionshield MAX is made from a non-splintering, flexible plastic film which can be easily cleaned,&nbsp;disinfected&nbsp;and reused.<br/><br/>The full-face visor is easily attached to and fits on any ExamVision loupe as part of your new work routine.&nbsp;</p>
+                                    <p>The new Visionshield MAX is made from a non-splintering, flexible plastic film which can be easily cleaned,&nbsp;disinfected&nbsp;and reused.<br/><br/>The full-face visor is easily attached to and fits on any Xpedent loupe as part of your new work routine.&nbsp;</p>
             <p><a rel="noopener" href="/media/hi1pyndt/visionshield-comparison.pdf" target="_blank" title="Visionshield Comparison"><u>Check out the exact size of each Visionshield version</u></a></p>
                                 </div>
             
                         </header>
                         <div class="col col--sm-6 col--md-7">
-                                <img class="lazy margin-auto lazy--loaded" src="/media/5mqldfwe/examvision_tam_2355.jpg?anchor=center&amp;mode=crop&amp;width=930&amp;height=680&amp;quality=76&amp;bgcolor=fff&amp;rnd=132467151331070000" alt="ACCE Vision shield MAX2"/>
+                                <img class="lazy margin-auto lazy--loaded" src="/media/5mqldfwe/Xpedent_tam_2355.jpg?anchor=center&amp;mode=crop&amp;width=930&amp;height=680&amp;quality=76&amp;bgcolor=fff&amp;rnd=132467151331070000" alt="ACCE Vision shield MAX2"/>
                         </div>
                     </div>
                 </div>
@@ -53,7 +53,7 @@ export default function AccessoriesPage() {
                                 <h3>Visionshield L &amp; XL<br/>Protective screen, full-face in two sizes</h3>
             
                                 <div class="rich-text">
-                                    <p>Protects the loupes and your face from splashes and dirt. Easily attached to ExamVision loupes using a velcro adapter. Size L fits Galilei loupes and size XL fits Kepler loupes.</p>
+                                    <p>Protects the loupes and your face from splashes and dirt. Easily attached to Xpedent loupes using a velcro adapter. Size L fits Galilei loupes and size XL fits Kepler loupes.</p>
             <p>These versions have a cut out in the visor for a head lamp.</p>
             <p><a rel="noopener" href="/media/0wvgkc23/visionshield-comparison.pdf" target="_blank" title="Visionshield Comparison"><u>Check out the exact size of each Visionshield version</u></a></p>
                                 </div>
@@ -96,7 +96,7 @@ export default function AccessoriesPage() {
                     <div class="grid-row grid-row--align-center">
                         <header class="col col--sm-6 col--md-5 section__header">
             
-                                <h3>ExamVision Custom Cleaning Solution</h3>
+                                <h3>Xpedent Custom Cleaning Solution</h3>
             
                                 <div class="rich-text">
                                     <p>Our custom cleaning solution will keep your loupes in perfect condition. Use a small amount on a microfibre lens cloth to safely remove dirt, dust and grease.</p>
@@ -104,7 +104,7 @@ export default function AccessoriesPage() {
             
                         </header>
                         <div class="col col--sm-6 col--md-7">
-                                <img class="lazy margin-auto lazy--loaded" src="/media/3jbfyssz/acce_spray_01.jpg?anchor=center&amp;mode=crop&amp;width=930&amp;height=680&amp;quality=76&amp;bgcolor=fff&amp;rnd=132467147625830000" alt="ExamVision cleaning solution for loupes in a spray"/>
+                                <img class="lazy margin-auto lazy--loaded" src="/media/3jbfyssz/acce_spray_01.jpg?anchor=center&amp;mode=crop&amp;width=930&amp;height=680&amp;quality=76&amp;bgcolor=fff&amp;rnd=132467147625830000" alt="Xpedent cleaning solution for loupes in a spray"/>
                         </div>
                     </div>
                 </div>
@@ -165,7 +165,7 @@ export default function AccessoriesPage() {
                                 <h3>Neck cord</h3>
             
                                 <div class="rich-text">
-                                    <p>Delicate yet durable cord for extra security when wearing the loupes.<br/>*Included in the price when purchasing ExamVision loupes.</p>
+                                    <p>Delicate yet durable cord for extra security when wearing the loupes.<br/>*Included in the price when purchasing Xpedent loupes.</p>
                                 </div>
             
                         </header>
@@ -250,7 +250,7 @@ export default function AccessoriesPage() {
                         <h2>
                             Lights Accessories
                         </h2>
-                        <p>ExamVision provides a range of products which complement and complete your light.</p>
+                        <p>Xpedent provides a range of products which complement and complete your light.</p>
                     </header>
                 </div>
             </section>
@@ -266,7 +266,7 @@ export default function AccessoriesPage() {
                                 <h3>PowerGo Control Unit</h3>
             
                                 <div class="rich-text">
-                                    <p>ExamVision’s unique PowerGo control unit is operated easily by pressing the front panel, with your hand or forearm. A short press will activate the unit, and further clicks will cycle the unit through high, medium and low settings. PowerGo weighs only 155 g and provides a minimum of six hours at high intensity.</p>
+                                    <p>Xpedent’s unique PowerGo control unit is operated easily by pressing the front panel, with your hand or forearm. A short press will activate the unit, and further clicks will cycle the unit through high, medium and low settings. PowerGo weighs only 155 g and provides a minimum of six hours at high intensity.</p>
                                 </div>
             
                         </header>
@@ -312,7 +312,7 @@ export default function AccessoriesPage() {
                                 <div class="rich-text">
                                     <p class="p1">For our high-end Total LEDs, we have designed a magnetic curing filter with an exclusive Dichroic glass lens. The specially made coating prevents UV and near-UV light from passing through. <strong>&nbsp;</strong></p>
             <p class="p1">The filter can be quickly flipped up or down and snaps into position allowing you to easily transition between desired lights.<strong>&nbsp;</strong></p>
-            <p class="p1">For other ExamVision light systems a standard curing filter is provided.</p>
+            <p class="p1">For other Xpedent light systems a standard curing filter is provided.</p>
                                 </div>
             
                         </header>

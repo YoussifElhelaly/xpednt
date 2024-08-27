@@ -14,10 +14,8 @@ export default function LoupeRange() {
                     </div>
                 </div>
                         <div id="productFilterContainer" class="grid-row filter__item-list">
-                            <LoupeRangeCard title={"Kepler Advanced"} img={og2futik} mag={["1.2X"]}/>
-                            <LoupeRangeCard title={"Kepler Reflekt"} img={akakongy} mag={["1.2X"]}/>
-                            <LoupeRangeCard title={"Kepler Kompakt"} img={qjgh03av} mag={["1.2X"]}/>
-                            <LoupeRangeCard title={"Galilean HD"} img={qjgh03av} mag={["1.2X"]}/>
+                            <LoupeRangeCard title={"Airgo"} img={og2futik} mag={["1.2X"]}/>
+                            <LoupeRangeCard title={"Galilean"} img={qjgh03av} mag={["1.2X"]}/>
                         </div>
             <a class="btn btn--link  _jc_modal_form" href="#contact-form-popup" title="Find your dealer" rel="noreferrer">
             <span>Find your dealer</span>

@@ -70,10 +70,8 @@ export default function Navbar() {
                         <ul data-bg="media/mezjrlwy/profession-panto-sport-v2-header9769.jpg?crop=0,0.14791666666666667,0,0.10208333333333333&amp;cropmode=percentage&amp;width=1920&amp;height=1080&amp;quality=76&amp;rnd=132467135091100000">
                             <li><Link to="/profession/" title="Profession">Profession</Link></li>
                                 <li><Link to="/profession/dental" title="Dental">Dental</Link></li>
-                                <li><Link to="/profession/hygienist" title="Hygienist">Hygienist</Link></li>
                                 <li><Link to="/profession/surgical" title="Surgical">Surgical</Link></li>
                                 <li><Link to="/profession/student" title="Student">Student</Link></li>
-                                <li><Link to="/profession/others" title="Others">Others</Link></li>
                         </ul>
                     </div>
                 </li>
@@ -89,9 +87,7 @@ export default function Navbar() {
                                     <li><Link to="/loupes-lights/loupes" title="Loupes">Loupes</Link></li>
                                     <li><Link to="/loupes-lights/magnifications" title="Magnifications">Magnifications</Link></li>
                                     <li><Link to="/loupes-lights/frames" title="Frames">Frames</Link></li>
-                                    <li><Link to="/loupes-lights/optics-safety" title="Optics &amp; safety">Optics &amp; safety</Link></li>
                                     <li><Link to="/loupes-lights/lights" title="Lights">Lights</Link></li>
-                                    <li><Link to="/loupes-lights/accessories" title="Accessories">Accessories</Link></li>
                                     <li><Link to="/loupes-lights/warranty" title="Warranty">Warranty</Link></li>
                                                             </ul>
                     </div>
@@ -149,22 +145,23 @@ export default function Navbar() {
                                 <Link to="/profession" title="Profession">Profession</Link>
                                     <ul class="nav__topmenu__sub">
                                             <li><Link to="/profession/dental" title="Dental">Dental</Link> <span class="nav__topmenu__sub-image" style={{backgroundImage : `${PDImg})`}}></span></li>
-                                            <li><Link to="/profession/hygienist" title="Hygienist">Hygienist</Link> <span class="nav__topmenu__sub-image"></span></li>
                                             <li><Link to="/profession/surgical" title="Surgical">Surgical</Link> <span class="nav__topmenu__sub-image" ></span></li>
-                                            <li><Link to="/profession/student" title="Student">Student</Link> <span class="nav__topmenu__sub-image" ></span></li>
-                                            <li><Link to="/profession/others" title="Others">Others</Link> <span class="nav__topmenu__sub-image" ></span></li>
-
+                                            <li><Link to="/profession/student" title="Student">Student</Link> <span class="nav__topmenu__sub-image" ></span></li>                     
                                     </ul>
                             </li>
                             <li>
                                 <Link to="/loupes-lights" title="Loupes &amp; Lights">Loupes &amp; Lights</Link>
                                     <ul class="nav__topmenu__sub">
-                                            <li><Link to="/loupes-lights/loupes" title="Loupes">Loupes</Link> <span class="nav__topmenu__sub-image"></span></li>
+                                            <li><Link  title="Loupes">Loupes</Link> 
+                                            <span class="nav__topmenu__sub-image">
+                                            <ul>
+                                                        <li><Link>Ready Mode</Link></li>
+                                                        <li><Link to="/loupes-lights/loupes/create-mode"> Custome Mode</Link></li>
+                                                    </ul>
+                                                    </span></li>
                                             <li><Link to="/loupes-lights/magnifications" title="Magnifications">Magnifications</Link> <span class="nav__topmenu__sub-image"></span></li>
                                             <li><Link to="/loupes-lights/frames" title="Frames">Frames</Link> <span class="nav__topmenu__sub-image" ></span></li>
-                                            <li><Link to="/loupes-lights/optics-safety" title="Optics &amp; safety">Optics &amp; safety</Link> <span class="nav__topmenu__sub-image"></span></li>
                                             <li><Link to="/loupes-lights/lights" title="Lights">Lights</Link> <span class="nav__topmenu__sub-image"></span></li>
-                                            <li><Link to="/loupes-lights/accessories" title="Accessories">Accessories</Link> <span class="nav__topmenu__sub-image"></span></li>
                                             <li><Link to="/loupes-lights/warranty" title="Warranty">Warranty</Link> <span class="nav__topmenu__sub-image"></span></li>
 
                                     </ul>

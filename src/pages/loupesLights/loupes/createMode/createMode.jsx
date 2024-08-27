@@ -1,8 +1,9 @@
-import Header from "../../../components/Header/Header";
-import headerImg from '../../../assets/img/IMG_1102.jpg'
-import LoupeRange from "../../../components/loupeRange/loupeRange";
-import ccdnjr30 from '../../../assets/media/ccdnjr30/demo-ergonomics.jpg'
-export default function LoupesPage () {
+import Header from "../../../../components/Header/Header";
+import headerImg from '../../../../assets/img/IMG_1102.jpg'
+import LoupeRange from "../../../../components/loupeRange/loupeRange";
+import ccdnjr30 from '../../../../assets/media/ccdnjr30/demo-ergonomics.jpg'
+
+export default function CreateMode() {
     return(
         <>
             <Header headerImg={headerImg}>
@@ -39,8 +40,8 @@ export default function LoupesPage () {
                                 <p><span>Prolonged periods of working in static postures will cause significant pains and injuries. Therefore, our team of experts will also give you and your colleagues advice and guidance on how to change your working positions on a regular basis and provide you with stretching exercises.</span>&nbsp;</p>
                                 <p><span>Not only will this focus on work-life ergonomics help you achieve better treatment results, faster procedures, happy well-treated&nbsp;</span><span>clients</span><span>&nbsp;– it will also ensure a safe and sound working environment and improve your work satisfaction</span><span>. Y</span><span>ou will feel the difference in the short as well as in the long term.</span><span><a rel="noopener" href="/ergonomics/" target="_blank" title="Ergonomics"> Learn more about loupes and ergonomics</a>.</span></p>
                                 <p><strong><span>Longer working life</span></strong>&nbsp;<br/><span>Working in a bright, high-exposure LED environment means your eyes are vulnerable to harmful UV and blue-violet light. Over time harmful light is one contributing factor of eye diseases like cataracts or age-related macular degeneration (AMD).&nbsp;</span><span>Xpedent&nbsp;</span><span>loupes&nbsp;</span><span>offer the best&nbsp;</span><span>BlueLight</span><span>&nbsp;Protection</span><span>&nbsp;</span><span>(BLP) and&nbsp;</span><span>Vision+Lens</span><span>&nbsp;Protection (VLP) coatings against harmful UV and blue-violet light in both ocular and carrier lenses.&nbsp;</span><span>Designed to complement Xpedent loupes, our LED loupe light solutions are </span><span>made</span><span>&nbsp;to deliver the exact amount of illumination, right where you need it</span><span> without jeopardising your eyesight. </span><span>Effective protection keeps the eyes in better condition while offering a more comfortable and relaxed vision.</span><span>&nbsp;</span><span>Your eyesight is one of your most valuable assets,&nbsp;</span><span><a rel="noopener" href="/loupes-lights/optics-safety/" target="_blank" title="Optics &amp; safety">click here</a> to&nbsp;</span><span>learn</span><span>&nbsp;how we protect it</span><span>.</span>&nbsp;</p>
-                                <p><strong><span>Your perfect loupe from Xpedent</span></strong>&nbsp;<br/><span>Xpedent has been awarded the Red Dot Product Design Award four times – in 2010, 2012, 2014, 2019 and again in 2021. These awards underline </span><span>Xpedent’s</span><span>&nbsp;commitment to outstanding innovative design.&nbsp;</span><span><a rel="noopener" href="/about-us/" target="_blank" title="About Us">Read more</a> about who we are at Xpedent and our award</span><span>-</span><span>winning products.</span><span>&nbsp;</span>&nbsp;</p>
                             </div>
+                                <p><strong><span>Your perfect loupe from Xpedent</span></strong>&nbsp;<br/><span>Xpedent has been awarded the Red Dot Product Design Award four times – in 2010, 2012, 2014, 2019 and again in 2021. These awards underline </span><span>Xpedent’s</span><span>&nbsp;commitment to outstanding innovative design.&nbsp;</span><span><a rel="noopener" href="/about-us/" target="_blank" title="About Us">Read more</a> about who we are at Xpedent and our award</span><span>-</span><span>winning products.</span><span>&nbsp;</span>&nbsp;</p>
                         </div>
                 </div>
             </section>

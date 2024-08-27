@@ -6,7 +6,7 @@ export default function LightRangeCard ({img , title}) {
             <div className="filter__item__image lazy lazy--bg lazy--loaded" style={{backgroundImage:`url(${img})`}}></div>
 
             <div className="filter__item__text">
-                <span className="filter__item__title">Total Pure &amp; Total Intense</span>
+                <span className="filter__item__title">Dragon Fly</span>
             </div>
         </a>
     </div>

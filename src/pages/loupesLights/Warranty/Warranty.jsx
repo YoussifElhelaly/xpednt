@@ -6,10 +6,10 @@ export default function WarrantyPage () {
             <Header headerImg={HeaderImg}>
                 <div>
                     <h1 className="header__headline col--xl-7">
-                        ExamVision <br/>Product Warranty
+                        Xpedent <br/>Product Warranty
                     </h1>
                     <div className="header__text col--md-7 col--lg-6">
-                        <p>All ExamVision products come with a comprehensive warranty as standard.<br/><br/>This warranty covers all manufacturing defects which might manifest within the warranty term.</p>
+                        <p>All Xpedent products come with a comprehensive warranty as standard.<br/><br/>This warranty covers all manufacturing defects which might manifest within the warranty term.</p>
                     </div>
                 </div>
             </Header>
@@ -26,7 +26,7 @@ export default function WarrantyPage () {
                             <li>Detachable cables are considered replaceable parts that can be expected to wear. Detachable cables are covered for manufacturing defects for one year.</li>
                             <li>A battery is defined as defective, if it drops to below 50% of its original specification within the specified warranty term.</li>
                             </ul>
-                            <p>Read more about the <a rel="noopener" href="/media/qokjbkxe/2024-07-warranty.pdf" target="_blank" title="ExamVision Warranties Loupes And Lights">ExamVision Product Warranty.</a></p>
+                            <p>Read more about the <a rel="noopener" href="/media/qokjbkxe/2024-07-warranty.pdf" target="_blank" title="Xpedent Warranties Loupes And Lights">Xpedent Product Warranty.</a></p>
                         </div>
 
                     </div>

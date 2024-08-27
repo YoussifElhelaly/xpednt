@@ -1,5 +1,5 @@
 import Professional from "../components/chooseProfessional/chooseProfessinal"
-import headerImg from '../assets/media/b2jjln5g/2024-01-loupes-lights-page-header624b.jpg'
+import headerImg from '../assets/img/00.png'
 import Header from "../components/Header/Header"
 
 export default function HomePage() {
@@ -10,12 +10,12 @@ export default function HomePage() {
         <Header headerImg={headerImg}>
         <div>
             <h1 class="header__headline col--xl-7">
-                Custom-crafted loupes <br/>for your unique needs
+            Custom loupes tailored <br/> to your needs
             </h1>
 
 
                 <div class="header__text col--md-7 col--lg-6">
-                    <p>ExamVision loupes are made by hand with quality components customised to meet your needs. Facial features, prescription, eyesight and ergonomic issues are implemented in the final design and production. The result is an outstanding loupe experience.</p>
+                    <p>Xpedent is a company that specializes in crafting custom loupes tailored precisely to the needs of dental professionals, surgeons, and other precision-focused specialists. With a commitment to enhancing clarity, comfort, and performance, Xpedent offers personalized solutions that ensure every detail is perfectly aligned with the user’s unique requirements. Whether you need specific magnification levels, ergonomic designs, or other custom features, Xpedent delivers loupes that enhance precision and improve outcomes in your work.</p>
                 </div>
 
 

@@ -17,9 +17,9 @@
 .nav__topmenu__sub li a[title="Others"] + span.nav__topmenu__sub-image {
   background: url("./assets/media/4pfnzmmy/2023-11-others-headerab60.jpg");
 }
-.nav__topmenu__sub li a[title="Loupes"] + span.nav__topmenu__sub-image {
+/* .nav__topmenu__sub li a[title="Loupes"] + span.nav__topmenu__sub-image {
   background: url("./assets/media/hoki0k5r/loupes_header_01d4d6.jpg");
-}
+} */
 .nav__topmenu__sub li a[title="Magnifications"] + span.nav__topmenu__sub-image {
   background: url("./assets/media/tbvb0ku0/mag_header_01bef3.jpg");
 }

@@ -9,7 +9,7 @@ export default function OpticsSafetyPage() {
                         Top-quality optics and <br/>specialist advice
                     </h1>
                     <div className="header__text col--md-7 col--lg-6">
-                        <p>ExamVision specialises in optics and optical solutions. We recognise the needs of the individual user and our aim is to improve your vision and ergonomic posture by finding the perfect custom-tailored loupe solution for you.</p>
+                        <p>Xpedent specialises in optics and optical solutions. We recognise the needs of the individual user and our aim is to improve your vision and ergonomic posture by finding the perfect custom-tailored loupe solution for you.</p>
                     </div>
                 </div>
             </Header>
@@ -19,11 +19,11 @@ export default function OpticsSafetyPage() {
                         <h2>Optical Specialists</h2>
                     </header>
                     <div className="rich-text">
-                        <p><span>ExamVision specialises in </span><span>optics and optical solutions</span><span>. We are proud to offer the most customisable loupes on the market, built from only the finest components and with a wide range of magnifications. Our ExamVision specialists can take your unique measurements at your place of work. Your loupes and magnification of choice will then be made to measure by optometrists in Denmark. All our products are the result of a perfect synergy </span><span>between technology and handcraft. We produce and assemble each loupe based on individual measurements. They then undergo a rigorous quality control process before leaving the factory.</span>&nbsp;</p>
+                        <p><span>Xpedent specialises in </span><span>optics and optical solutions</span><span>. We are proud to offer the most customisable loupes on the market, built from only the finest components and with a wide range of magnifications. Our Xpedent specialists can take your unique measurements at your place of work. Your loupes and magnification of choice will then be made to measure by optometrists in Denmark. All our products are the result of a perfect synergy </span><span>between technology and handcraft. We produce and assemble each loupe based on individual measurements. They then undergo a rigorous quality control process before leaving the factory.</span>&nbsp;</p>
             <h3><span>The most customisable loupes on the market</span></h3>
-            <p><span>ExamVision provides you with unrivalled optical performance. ExamVision loupes include built-in benchmark features for eye protection, smudge resistance and reflection elimination. Your consultation with your specialist ExamVision dealer is an opportunity to achieve the best possible optical solution for your loupes, both in the oculars and in the carrier lenses made to measure by optometrists in Denmark.&nbsp;</span></p>
+            <p><span>Xpedent provides you with unrivalled optical performance. Xpedent loupes include built-in benchmark features for eye protection, smudge resistance and reflection elimination. Your consultation with your specialist Xpedent dealer is an opportunity to achieve the best possible optical solution for your loupes, both in the oculars and in the carrier lenses made to measure by optometrists in Denmark.&nbsp;</span></p>
             <h3>High-quality work depends on optimised vision</h3>
-            <p>The specially designed ExamVision frames&nbsp;allow any prescription in the loupe and in the carrier lenses, to ensure a perfect optical result for your working environment. Your ExamVision loupes are also future proof for prescription changes. All loupes are produced with world-class optics that incorporate only the finest anti-reflective features, protective coatings and filters, and the oculars also come with built-in chromatic aberration (colour-separation) prevention as standard.</p>
+            <p>The specially designed Xpedent frames&nbsp;allow any prescription in the loupe and in the carrier lenses, to ensure a perfect optical result for your working environment. Your Xpedent loupes are also future proof for prescription changes. All loupes are produced with world-class optics that incorporate only the finest anti-reflective features, protective coatings and filters, and the oculars also come with built-in chromatic aberration (colour-separation) prevention as standard.</p>
                     </div>
 
                 </div>
@@ -82,7 +82,7 @@ export default function OpticsSafetyPage() {
                         <h2>
                             Protective coatings and filters
                         </h2>
-                        <p>ExamVision offers you world class optics with the finest anti-reflective, protective coatings built into the carrier lenses. They provide you with a lightweight, high-quality loupe which is more scratch-resistant and has increased light transmission to protect and improve your vision. Effective, protective coatings offer you and your eyes protection against harmful UV and Blue light.</p>
+                        <p>Xpedent offers you world class optics with the finest anti-reflective, protective coatings built into the carrier lenses. They provide you with a lightweight, high-quality loupe which is more scratch-resistant and has increased light transmission to protect and improve your vision. Effective, protective coatings offer you and your eyes protection against harmful UV and Blue light.</p>
                     </header>
                 </div>
             </section>
@@ -96,7 +96,7 @@ export default function OpticsSafetyPage() {
 
                                 <div className="rich-text">
                                     <p>Hi-index lenses are lighter and thinner than ordinary lenses. They provide a more elegant looking loupe far more c<span>omfortable to wear.&nbsp;</span></p>
-            <p>ExamVision uses Hi-index lenses as standard in all loupes.&nbsp;</p>
+            <p>Xpedent uses Hi-index lenses as standard in all loupes.&nbsp;</p>
                                 </div>
 
                         </header>
@@ -116,7 +116,7 @@ export default function OpticsSafetyPage() {
 
                                 <div className="rich-text">
                                     <p>VLP is an enhanced coating that provides much greater scratch resistance than basic and standard coatings. Built-in anti-reflection provides greater comfort and sharpness of vision and filters 99% of harmful ultra-violet light. It also repels dust and smudges, reducing the amount of cleaning necessary.</p>
-            <p>ExamVision uses VLP coated lenses as standard for ocular and carrier lenses on all loupe systems.&nbsp;</p>
+            <p>Xpedent uses VLP coated lenses as standard for ocular and carrier lenses on all loupe systems.&nbsp;</p>
                                 </div>
 
                         </header>
@@ -146,8 +146,8 @@ export default function OpticsSafetyPage() {
 
                                 <div className="rich-text">
                                     <p>Working in a bright, high-exposure LED environment means your eyes are vulnerable to harmful UV and Blue-Violet light. Blue-Violet light is more visible than UV light, occupying the 400-455 nm band in the light spectrum (see illustration). These harmful blue wavelengths are not kept out by the VLP coating. Over time harmful light can contribute to eye diseases like cataracts or age-related macular degeneration (AMD).</p>
-            <p>As an optional extra, ExamVision loupes can include optimal BlueLight Protection (BLP) in both ocular and carrier lenses, which provides protection three times more effective than standard prescription lenses, against harmful UV and Blue-Violet light.</p>
-            <p>ExamVision strongly recommends that loupe users who spend long periods in LED environments use BlueLight Protection (BLP) in both the ocular and carrier lenses, because effective protection keeps the eyes in better condition while offering more comfortable and relaxed vision. A high-exposure LED environment describes all general clinic lighting above a colour temperature of 4,500 Kelvin (blue-white coloured light). </p>
+            <p>As an optional extra, Xpedent loupes can include optimal BlueLight Protection (BLP) in both ocular and carrier lenses, which provides protection three times more effective than standard prescription lenses, against harmful UV and Blue-Violet light.</p>
+            <p>Xpedent strongly recommends that loupe users who spend long periods in LED environments use BlueLight Protection (BLP) in both the ocular and carrier lenses, because effective protection keeps the eyes in better condition while offering more comfortable and relaxed vision. A high-exposure LED environment describes all general clinic lighting above a colour temperature of 4,500 Kelvin (blue-white coloured light). </p>
                                 </div>
 
                         </header>

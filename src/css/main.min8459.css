@@ -1854,6 +1854,10 @@ nav li,nav ul {
 .filter__item-list {
     margin-bottom: 24px
 }
+#productFilterContainer.filter__item-list {
+    justify-content: center;
+}
+
 
 .grid-row+.filter__item-list {
     margin-top: 20px
@@ -2025,8 +2029,8 @@ nav li,nav ul {
     bottom: 0;
     left: 0;
     content: "";
-    opacity: 0.3;
-    background-color: #60c0d1;
+    opacity: 0.8;
+    background: linear-gradient(90deg, rgba(0,0,0,1) 20%, rgba(255,255,255,0) 100%);
     transition: opacity 2s cubic-bezier(.25,.46,.45,.94) .2s;
 }
 
@@ -2723,7 +2727,7 @@ img.lazy:not(.lazy--loaded)+.icon--play {
     right: auto;
     bottom: auto;
     left: 0;
-    padding: 35px 40px 36px 39px;
+    padding: 35px 0;
     margin-top: -1px;
     color: #706f6e;
     background-color: rgba(255,255,255,.8);
@@ -2738,7 +2742,7 @@ img.lazy:not(.lazy--loaded)+.icon--play {
 
 .nav__topmenu__sub li {
     white-space: nowrap;
-    min-width: 170px
+    min-width: 170px;
 }
 
 .nav__topmenu__sub:hover,li:hover .nav__topmenu__sub {
@@ -2750,6 +2754,7 @@ img.lazy:not(.lazy--loaded)+.icon--play {
 .nav__topmenu__sub a {
     position: relative;
     padding-right: 40px;
+    padding: 0 40px;
     color: #333;
     font-weight: 500;
     line-height: 1.75;
@@ -2771,12 +2776,21 @@ img.lazy:not(.lazy--loaded)+.icon--play {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    transition: opacity .4s cubic-bezier(.22,.61,.36,1),transform .5s cubic-bezier(.23,1,.32,1)
+    transition: opacity .4s cubic-bezier(.22,.61,.36,1),transform .5s cubic-bezier(.23,1,.32,1);
+    visibility: hidden;
 }
 
-a:hover+.nav__topmenu__sub-image {
-    opacity: 1
+.nav__topmenu__sub li:hover .nav__topmenu__sub-image {
+    opacity: 1;
+    visibility: visible;
 }
+
+.nav__topmenu__sub-image ul {
+    padding: 40px 0;
+    background-color: #cfd0d4;
+    height: 100%;
+}
+
 
 .nav__btn,.nav__logo,.nav__tools {
     position: absolute;
@@ -3144,7 +3158,7 @@ a:hover+.nav__topmenu__sub-image {
 
 .nav.nav--sticky.going-up:before {
     transition: background-color 1.8s cubic-bezier(.165,.84,.44,1);
-    background-color: rgb(45 33 135);
+    background-color: #2d2187;
 }
 
 .nav.nav--sticky.going-up .nav__topmenu {
