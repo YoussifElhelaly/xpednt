@@ -10,3 +10,41 @@ table th {
     text-align: center;
     padding: 20px;
 }
+
+@media screen and (max-width: 750px){
+    table .hidden {
+        display: block !important;
+        visibility: visible;
+    }
+
+    table {
+        border: unset !important;
+    }
+    table thead {
+        display: none;
+    }
+
+    table, table tbody, table tr , table td {
+        display: block;
+        width: 100%;
+    }
+    table tr {
+        margin-bottom: 30px;
+    }
+    table td {
+        text-align: right;
+        position: relative;
+        padding-left: 50%;
+    }
+        table td,
+        table th {
+            border: 1px solid #fff;
+        }
+    table td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+} 

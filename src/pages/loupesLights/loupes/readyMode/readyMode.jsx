@@ -42,30 +42,39 @@ export default function ReadyMade() {
                         </thead>
                         <tbody>
                             <tr>
-                                <td>3.5X</td>
-                                <td rowSpan={4}>280-380mm <br /> 360-460mm <br /> 440-540mm <br /> 500-600mm </td>
-                                <td rowSpan={4}>50-80MM</td>
-                                <td>100mm</td>
-                                <td>70-90mm</td>
-                                <td>75g</td>
+                                <td data-label="Magnification">3.5X</td>
+                                <td data-label="Working Distance" rowSpan={4}>280-380mm <br /> 360-460mm <br /> 440-540mm <br /> 500-600mm </td>
+                                <td data-label="Pupillary Distance Adjustment" rowSpan={4}>50-80MM</td>
+                                <td data-label="Depth Of Field">100mm</td>
+                                <td data-label="Depth Of View">70-90mm</td>
+                                <td data-label="Weight">75g</td>
                             </tr>
                             <tr>
-                                <td>4.5X</td>
-                                <td>100mm</td>
-                                <td>50-80mm</td>
-                                <td>80g</td>
+                                <td data-label="Magnification">4.5X</td>
+                                <td className="hidden" data-label="Working Distance" rowSpan={4}>280-380mm <br /> 360-460mm <br /> 440-540mm <br /> 500-600mm </td>
+                                <td className="hidden" data-label="Pupillary Distance Adjustment" rowSpan={4}>50-80MM</td>
+                                
+                                <td data-label="Depth Of Field">100mm</td>
+                                <td data-label="Depth Of View">50-80mm</td>
+                                <td data-label="Weight">80g</td>
                             </tr>
                             <tr>
-                                <td>5.5X</td>
-                                <td>90mm</td>
-                                <td>50-75mm</td>
-                                <td>88g</td>
+                                <td data-label="Magnification">5.5X</td>
+                                <td className="hidden" data-label="Working Distance" rowSpan={4}>280-380mm <br /> 360-460mm <br /> 440-540mm <br /> 500-600mm </td>
+                                <td className="hidden" data-label="Pupillary Distance Adjustment" rowSpan={4}>50-80MM</td>
+                                
+                                <td data-label="Depth Of Field">90mm</td>
+                                <td data-label="Depth Of View">50-75mm</td>
+                                <td data-label="Weight">88g</td>
                             </tr>
                             <tr>
-                                <td>6.5X</td>
-                                <td>80mm</td>
-                                <td>50-75mm</td>
-                                <td>87g</td>
+                                <td data-label="Magnification">6.5X</td>
+                                <td className="hidden" data-label="Working Distance" rowSpan={4}>280-380mm <br /> 360-460mm <br /> 440-540mm <br /> 500-600mm </td>
+                                <td className="hidden" data-label="Pupillary Distance Adjustment" rowSpan={4}>50-80MM</td>
+                                
+                                <td data-label="Depth Of Field">80mm</td>
+                                <td data-label="Depth Of View">50-75mm</td>
+                                <td data-label="Weight">87g</td>
                             </tr>
                         </tbody>
                     </table>
