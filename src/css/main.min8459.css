@@ -2804,6 +2804,9 @@ img.lazy:not(.lazy--loaded)+.icon--play {
     justify-content: center;
     align-items: center;
     width: 80px;
+    margin-left: auto;
+    position: relative;
+    top: 0;
     z-index: 5;
     -webkit-appearance: none;
     -moz-appearance: none;
