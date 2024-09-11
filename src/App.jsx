@@ -21,6 +21,7 @@ import OpticsSafetyPage from './pages/loupesLights/opticsSafety/opticsSafety';
 import LightsPage from './pages/loupesLights/lights/lights';
 import AccessoriesPage from './pages/loupesLights/Accessories/Accessories';
 import CreateMode from './pages/loupesLights/loupes/createMode/createMode';
+import ReadyMade from './pages/loupesLights/loupes/readyMode/readyMode';
 
 function App() {
   return (
@@ -39,13 +40,14 @@ function App() {
     <Route element={<ErgonomicsPage/>} path='/ergonomics' />
     <Route element={<LoupesLights/>} path='/loupes-lights' />
     <Route element={<CreateMode/>} path='/loupes-lights/loupes/create-mode' />
+    <Route element={<ReadyMade/>} path='/loupes-lights/loupes/ready-made' />
     <Route element={<MagnificationsPage/>} path='/loupes-lights/Magnifications' />
     <Route element={<OpticsSafetyPage/>} path='/loupes-lights/Optics-Safety' />
     <Route element={<WarrantyPage/>} path='/loupes-lights/Warranty' />
     <Route element={<LightsPage/>} path='/loupes-lights/lights' />
     <Route element={<AccessoriesPage/>} path='/loupes-lights/accessories' />
   </Routes>
-  <TrySection/>
+  {/* <TrySection/> */}
   <Footer/>
     </>
   );

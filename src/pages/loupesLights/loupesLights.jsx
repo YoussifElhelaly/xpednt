@@ -1,11 +1,12 @@
 import Header from "../../components/Header/Header";
-import headerImg from '../../assets/media/1vqll1pr/2024-01-homepage-kr-headera2e3.jpg'
+import headerImg from '../../assets/img/004.png'
 import tmrnt24s from '../../assets/media/tmrnt24s/loupes_gate_02.jpg'
 import oprfdcgt from '../../assets/media/oprfdcgt/2023-11-lights-gate.jpeg'
 import v0vbfil2m from '../../assets/media/0vbfil2m/loupes-light-page-mag-image-b.jpg'
 import zye5rrj from '../../assets/media/1zye5rrj/reviews_hd_01.jpg'
 import oa3ixhy3 from '../../assets/media/oa3ixhy3/frame_mixed_01.jpg'
 import rmpvhnm from '../../assets/media/4rmpvhnm/acces_header_01.jpg'
+import video from '../../assets/loupe.mp4'
 export default function LoupesLights() {
     return (
         <>
@@ -36,8 +37,11 @@ export default function LoupesLights() {
                                 </a>
                         </header>
                         <div class="col col--sm-6 col--md-7">
-                                <img class="lazy margin-auto lazy--loaded" src={tmrnt24s} alt="Dental loupes for dentists and hygienists Galilean HD in Icon frame v2, raw colour"/>
+                            <video src={video} autoPlay muted loop></video>
                         </div>
+                        {/* <div class="col col--sm-6 col--md-7">
+                                <img class="lazy margin-auto lazy--loaded" src={tmrnt24s} alt="Dental loupes for dentists and hygienists Galilean HD in Icon frame v2, raw colour"/>
+                        </div> */}
                     </div>
                 </div>
             </section>

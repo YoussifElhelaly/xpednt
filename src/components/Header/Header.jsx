@@ -24,11 +24,11 @@ export default function Header({headerImg , children}) {
                 </Link>
                 <a class="btn btn--link popup-content _jc_bjs" 
                 href="#product-popup" 
-                title="Design your own loupe" 
+                title="customize your loupe" 
                 target="" 
                 
                 rel="noreferrer">
-                <span>Design your own loupe</span>
+                <span>customize your loupe</span>
                 </a>
             </div>
         </div>

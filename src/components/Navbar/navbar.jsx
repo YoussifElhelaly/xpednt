@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 
 // import headerImg from '../../assets/media/b2jjln5g/2024-01-loupes-lights-page-header.jpg'
-import logo from '../../img/landing/logo.png'
+import logo from '../../assets/img/logo.png'
 import PDImg from '../../assets/media/onwft3k0/dental_header_010eb1.jpg'
 import { useEffect, useRef } from "react";
 
@@ -155,8 +155,8 @@ export default function Navbar() {
                                             <li><Link  title="Loupes">Loupes</Link> 
                                             <span class="nav__topmenu__sub-image">
                                             <ul>
-                                                        <li><Link>Ready Mode</Link></li>
-                                                        <li><Link to="/loupes-lights/loupes/create-mode"> Custome Mode</Link></li>
+                                                        <li><Link to="/loupes-lights/loupes/ready-made">Ready Made</Link></li>
+                                                        <li><Link to="/loupes-lights/loupes/create-mode"> Custome Made</Link></li>
                                                     </ul>
                                                     </span></li>
                                             <li><Link to="/loupes-lights/magnifications" title="Magnifications">Magnifications</Link> <span class="nav__topmenu__sub-image"></span></li>
@@ -185,18 +185,7 @@ export default function Navbar() {
                                 <Link to="support" title="Support">Support</Link>
                             </li>
                     </ul>
-                <div class="nav__tools">
-                                    <form class="nav__tool nav__tool__search" id="formsearch" action="https://xpedent.com/search/" method="GET">
-                            <input type="text" name="query" tabindex="-1" id="searchQuery" aria-label="Search" placeholder="What are you looking for?"/>
-                            <button aria-label="Search">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21.37" viewBox="0 0 21 21.37">
-                                    <g transform="translate(-0.299)">
-                                        <path d="M19.855,21.37a1.151,1.151,0,0,1-.826-.345l-5.215-5.331a8.814,8.814,0,0,1-5.032,1.562A8.716,8.716,0,0,1,0,8.628,8.716,8.716,0,0,1,8.782,0a8.716,8.716,0,0,1,8.782,8.628,8.542,8.542,0,0,1-2.06,5.547l5.177,5.29a1.112,1.112,0,0,1-.032,1.59A1.149,1.149,0,0,1,19.855,21.37ZM8.782,2.25A6.442,6.442,0,0,0,2.291,8.628,6.442,6.442,0,0,0,8.782,15a6.442,6.442,0,0,0,6.491-6.377A6.442,6.442,0,0,0,8.782,2.25Z" transform="translate(0.299 0)" fill="#fff" />
-                                    </g>
-                                </svg>
-                            </button>
-                        </form>
-                </div>
+               
             </div>
         </nav>
         </>

@@ -1172,7 +1172,7 @@ html {
 }
 
 body {
-    background-color: #bababa;
+    background-color: #fff;
     font-size: 1.6rem;
     font-family: Roboto,Helvetica,Arial,sans-serif;
     line-height: 1.45;
@@ -1369,18 +1369,6 @@ nav li,nav ul {
     transform: translateY(-2rem)
 }
 
-.btn--link:before,.btn--readmore:before {
-    content: "";
-    position: absolute;
-    top: 46%;
-    width: 44px;
-    height: 44px;
-    border-radius: 22px;
-    background: rgba(126, 125, 129, .35);
-    transform: translate3d(-22px,-50%,0);
-    z-index: 0;
-    transition: width .3s cubic-bezier(.86,0,.07,1)
-}
 
 .btn--link:focus:before,.btn--link:hover:before,.btn--readmore:focus:before,.btn--readmore:hover:before {
     transition: width .3s cubic-bezier(.23,1,.32,1);
@@ -1416,9 +1404,27 @@ nav li,nav ul {
 }
 
 .btn__wrap .btn--link {
-    margin-top: 30px;
-    margin-right: 20px
+    background-color: #000;
+    padding: 20px;
+    border-radius: 5px;
+    cursor: pointer;
 }
+
+.btn__wrap .btn--link::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background-color: #60c0d1;
+    transition: 0.3s;
+
+}
+
+.btn__wrap .btn--link:hover::before {
+    width: 100%;
+} 
 
 .header .btn--link,.section--dark .btn--link {
     color: #fff
@@ -2426,7 +2432,8 @@ img.lazy:not(.lazy--loaded)+.icon--play {
     width: 100%;
     z-index: 5;
     color: #fff;
-    max-width: 1920px;
+    display: flex;
+    align-items: center;
 }
 
 .nav:before {
@@ -2787,15 +2794,8 @@ img.lazy:not(.lazy--loaded)+.icon--play {
 
 .nav__topmenu__sub-image ul {
     padding: 40px 0;
-    background-color: #cfd0d4;
+
     height: 100%;
-}
-
-
-.nav__btn,.nav__logo,.nav__tools {
-    position: absolute;
-    top: 0;
-    height: 80px
 }
 
 .nav__btn {
@@ -3143,7 +3143,9 @@ img.lazy:not(.lazy--loaded)+.icon--play {
 }
 
 .nav.nav--sticky .nav__logo {
-    transition-delay: 0s!important;
+    transition-delay: 0s !important;
+    background-color: #60c0d1;
+    padding: 20px 25px !important;
     height: 80px;
     pointer-events: all
 }
@@ -3158,7 +3160,7 @@ img.lazy:not(.lazy--loaded)+.icon--play {
 
 .nav.nav--sticky.going-up:before {
     transition: background-color 1.8s cubic-bezier(.165,.84,.44,1);
-    background-color: #2d2187;
+    background-color: #60c0d1;
 }
 
 .nav.nav--sticky.going-up .nav__topmenu {
@@ -3175,7 +3177,7 @@ img.lazy:not(.lazy--loaded)+.icon--play {
 
 .nav.nav--sticky.going-up .nav__topmenu__sub {
     border: 1px solid rgba(83,83,85,.4);
-    background-color: rgba(255,255,255,.9)
+
 }
 
 .nav.nav--sticky.going-up .nav__logo,.nav.nav--sticky.going-up .nav__tools {
@@ -3529,6 +3531,10 @@ img.lazy:not(.lazy--loaded)+.icon--play {
     line-height: 1.36em;
     display: block;
     margin-bottom: 1.2em
+}
+
+img.lazy.margin-auto.lazy--loaded {
+    border-radius: 10px;
 }
 
 .team {
@@ -3953,14 +3959,7 @@ img.lazy:not(.lazy--loaded)+.icon--play {
         transform: translateY(-4rem)
     }
 
-    .btn--link:before,.btn--readmore:before {
-        background: #60c0d1;
-        width: 54px;
-        height: 54px;
-        border-radius: 27px;
-        transform: translate3d(-27px,-50%,0);
-        width: 54px;
-    }
+  
 
     .btn {
         margin: 50px 0 4.62963vh 20px
@@ -4313,15 +4312,15 @@ img.lazy:not(.lazy--loaded)+.icon--play {
     }
 
     .h1,h1 {
-        font-size: 4.80519vw
+        font-size: 3.80519vw
     }
 
     .h2,h2 {
-        font-size: 3.24675vw
+        font-size: 2.24675vw
     }
 
     .h3,h3 {
-        font-size: 1.94805vw
+        font-size: 0.94805vw
     }
 
     .h4,h4 {
@@ -4555,8 +4554,11 @@ img.lazy:not(.lazy--loaded)+.icon--play {
     }
 
     .section__header {
-        padding-right: 50px
+        padding-right: 50px;
+        text-align: center;
+        margin-bottom: 50px;
     }
+
 
     .grid-row--reverse .section__header {
         padding-left: 111.5px
@@ -4627,7 +4629,7 @@ img.lazy:not(.lazy--loaded)+.icon--play {
         text-transform: uppercase;
         height: 130px;
         display: flex;
-        justify-content: flex-end;
+        justify-content: center;
         align-items: center;
         padding-right: 80px;
         font-size: 1.6rem;
@@ -4635,9 +4637,6 @@ img.lazy:not(.lazy--loaded)+.icon--play {
         transition: height .5s cubic-bezier(.165,.84,.44,1),transform .4s cubic-bezier(.165,.84,.44,1) .1s
     }
 
-    .nav__btn,.nav__logo,.nav__tools {
-        height: 130px
-    }
 
     .nav__btn {
         display: none
@@ -4645,7 +4644,7 @@ img.lazy:not(.lazy--loaded)+.icon--play {
 
     .nav__logo {
         padding: 30px 40px;
-        background-color: #ffffff;
+       
         left: 0;
         border-bottom-right-radius: 35px;
     }

@@ -13,8 +13,8 @@ export default function LightRange() {
             <div id="productFilterContainer" className="grid-row filter__item-list">
                 <LightRangeCard />
             </div>
-            <a className="btn btn--link  _jc_modal_form" href="#contact-form-popup" title="Find your dealer" rel="noreferrer">
-                <span>Find your dealer</span>
+            <a className="btn btn--link  _jc_modal_form" href="#contact-form-popup" title="get in touch" rel="noreferrer">
+                <span>get in touch</span>
             </a>
         </div>
     </section>

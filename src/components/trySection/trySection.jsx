@@ -10,7 +10,7 @@ export default function TrySection() {
         title="Find your dealer" 
          
         rel="noreferrer">
-    <span>Find your dealer</span>
+    <span>Custome your loups</span>
     </a>
         </header>
     </div>

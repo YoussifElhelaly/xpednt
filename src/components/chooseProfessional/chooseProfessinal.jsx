@@ -10,7 +10,7 @@ export default function Professional() {
 
     <div class="grid-wrap">
         <header class="col col--md-12 section__header">
-            <h2 class="h1">Choose<br />profession</h2>
+            <h2 class="h1">Choose profession</h2>
         </header>
         <div class="grid-row">
             <div class="col col--md-12 gateway__wrap">

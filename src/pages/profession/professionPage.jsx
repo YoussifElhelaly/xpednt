@@ -1,5 +1,5 @@
 import Header from "../../components/Header/Header";
-import headerImg from '../../assets/media/mezjrlwy/profession-panto-sport-v2-header389a.jpg'
+import headerImg from '../../assets/img/018.png'
 import nawk0ipq from '../../assets/media/nawk0ipq/gal_gallery_02.jpg'
 import Professional from "../../components/chooseProfessional/chooseProfessinal";
 export default function ProfessionPage() {
@@ -13,7 +13,7 @@ export default function ProfessionPage() {
 
 
                 <div class="header__text col--md-7 col--lg-6">
-                    <p>ExamVision provides high-end, custom-tailored loupes, no matter if you work within dentistry, surgery or any other profession, where magnification and clear vision is paramount. So, this section might help you to target the perfect loupe solution for you.</p>
+                    <p>XPEDENT provides high-end, custom-tailored loupes, no matter if you work within dentistry, surgery or any other profession, where magnification and clear vision is paramount. So, this section might help you to target the perfect loupe solution for you.</p>
                 </div>
 
 
@@ -28,8 +28,8 @@ export default function ProfessionPage() {
                     <h2 class="h1">Profession</h2>
 
                     <div class="rich-text">
-                        <p>ExamVision loupes are custom-crafted and made to measure exactly to you. But the functional use of a loupe varies, depending whether you work as a dentist doing complicated procedures all day, an experienced surgeon standing and performing demanding surgery, a hygienist, a student or something entirely different.</p>
-                        <p>ExamVision clients currently enjoying perfect vision at work:</p>
+                        <p>XPEDENT loupes are custom-crafted and made to measure exactly to you. But the functional use of a loupe varies, depending whether you work as a dentist doing complicated procedures all day, an experienced surgeon standing and performing demanding surgery, a hygienist, a student or something entirely different.</p>
+                        <p>XPEDENT clients currently enjoying perfect vision at work:</p>
                         <ul>
                         <li>General dental surgeons</li>
                         <li>Dental hygienists</li>
@@ -44,7 +44,7 @@ export default function ProfessionPage() {
 
             </header>
             <div class="col col--sm-6 col--md-7">
-                    <img class="lazy margin-auto lazy--loaded" src={nawk0ipq} alt="ExamVision Magnifying Loupes for Dentists Hygienists Surgeons GAL Gallery 02"/>
+                    <img class="lazy margin-auto lazy--loaded" src={nawk0ipq} alt="XPEDENT Magnifying Loupes for Dentists Hygienists Surgeons GAL Gallery 02"/>
             </div>
         </div>
     </div>

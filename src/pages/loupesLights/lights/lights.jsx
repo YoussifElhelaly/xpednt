@@ -1,7 +1,6 @@
 import HeaderImg from '../../../assets/media/ew1fahpb/2023-11-light-header4def.jpg'
 import Header from '../../../components/Header/Header'
 import LightRange from '../../../components/lightRange/lightRange'
-
 export default function LightsPage() {
     return (
         <>

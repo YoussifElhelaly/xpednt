@@ -1,0 +1,14 @@
+.certifacte {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 70px;
+}
+
+.certifacte .img {
+    width: 150px;
+}
+
+.certifacte .img img {
+    filter: invert(1);
+}

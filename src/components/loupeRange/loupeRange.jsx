@@ -17,8 +17,8 @@ export default function LoupeRange() {
                             <LoupeRangeCard title={"Airgo"} img={og2futik} mag={["1.2X"]}/>
                             <LoupeRangeCard title={"Galilean"} img={qjgh03av} mag={["1.2X"]}/>
                         </div>
-            <a class="btn btn--link  _jc_modal_form" href="#contact-form-popup" title="Find your dealer" rel="noreferrer">
-            <span>Find your dealer</span>
+            <a class="btn btn--link  _jc_modal_form" href="#contact-form-popup" title="get in touch" rel="noreferrer">
+            <span>get in touch</span>
             </a>
             </div>
         </section>
