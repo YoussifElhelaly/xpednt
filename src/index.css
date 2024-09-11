@@ -1,6 +1,7 @@
 .nav__topmenu__sub li a + span.nav__topmenu__sub-image  {
   background-position: right !important;
   background-size: cover !important;
+  background-color: white;
 }
 .nav__topmenu__sub li a[title="Dental"] + span.nav__topmenu__sub-image {
     background: url("./assets/media/onwft3k0/dental_header_013c2d.jpg");
