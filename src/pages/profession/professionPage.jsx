@@ -2,6 +2,7 @@ import Header from "../../components/Header/Header";
 import headerImg from '../../assets/img/018.png'
 import nawk0ipq from '../../assets/media/nawk0ipq/gal_gallery_02.jpg'
 import Professional from "../../components/chooseProfessional/chooseProfessinal";
+import './professionPage.css'
 export default function ProfessionPage() {
     return(
         <>
@@ -22,7 +23,7 @@ export default function ProfessionPage() {
             <section id="module1" class="section image-text section--grey-extra-light-dusted">
 
     <div class="grid-wrap">
-        <div class="grid-row grid-row--align-center grid-row--reverse">
+        <div class="grid-row grid-row--reverse ">
             <header class="col col--sm-6 col--md-5 section__header">
 
                     <h2 class="h1">Profession</h2>
@@ -43,8 +44,18 @@ export default function ProfessionPage() {
                     </div>
 
             </header>
-            <div class="col col--sm-6 col--md-7">
-                    <img class="lazy margin-auto lazy--loaded" src={nawk0ipq} alt="XPEDENT Magnifying Loupes for Dentists Hygienists Surgeons GAL Gallery 02"/>
+            <div class="col col--sm-6 col--md-7 professionImageContainer">
+            <div className="grid-row ">
+                <div class="col professionImage">
+                    <img class="lazy margin-auto lazy--loaded " src={nawk0ipq} alt="XPEDENT Magnifying Loupes for Dentists Hygienists Surgeons GAL Gallery 02"/>
+                </div>
+                <div class="col professionImage">
+                    <img class="lazy margin-auto lazy--loaded " src={nawk0ipq} alt="XPEDENT Magnifying Loupes for Dentists Hygienists Surgeons GAL Gallery 02"/>
+                </div>
+                <div class="col professionImage">
+                    <img class="lazy margin-auto lazy--loaded " src={nawk0ipq} alt="XPEDENT Magnifying Loupes for Dentists Hygienists Surgeons GAL Gallery 02"/>
+                </div>
+                </div>        
             </div>
         </div>
     </div>

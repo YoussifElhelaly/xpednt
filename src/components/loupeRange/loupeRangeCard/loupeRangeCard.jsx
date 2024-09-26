@@ -14,7 +14,6 @@ export default function LoupeRangeCard({title, img , mag}) {
                                         mag.map((ele)=>{
                                             return (
                                                 <li>{ele}</li>
-
                                             )
                                         })
                                     }

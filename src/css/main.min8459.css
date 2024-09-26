@@ -1937,7 +1937,9 @@ nav li,nav ul {
 
 .gateway__link {
     position: relative;
-    width: 100%
+    width: 100% !important ;
+    display: block;
+    position: static;
 }
 
 .gateway__text {
