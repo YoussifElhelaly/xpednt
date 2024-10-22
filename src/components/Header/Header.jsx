@@ -1,12 +1,13 @@
-import { Link } from "react-scroll";
+import { Link } from "react-router-dom";
+import { Link as LinkScroll } from "react-scroll";
 
 
-export default function Header({headerImg , children}) {
+export default function Header({headerImg , flip , children}) {
     return(
         <header class="header header--has-aside">
 
         <div class="header__media lazy">
-            <img src={headerImg} alt="" />
+            <img src={headerImg} alt="" style={flip && {transform: "scaleX(-1)"}}/>
         </div>
 
 
@@ -14,22 +15,20 @@ export default function Header({headerImg , children}) {
         {children}
        
             <div class="btn__wrap col--md-6">
-                <Link class="btn btn--link " 
+                <LinkScroll class="btn btn--link " 
                 to="module2" 
                 title="Choose profession" 
                 smooth={true}
                 duration={500}
                 rel="noreferrer">
                 <span>Choose profession</span>
-                </Link>
-                <a class="btn btn--link popup-content _jc_bjs" 
-                href="#product-popup" 
+                </LinkScroll>
+                <Link class="btn btn--link popup-content _jc_bjs" 
+                to="/CustomeYourLoupe"
                 title="customize your loupe" 
-                target="" 
-                
                 rel="noreferrer">
                 <span>customize your loupe</span>
-                </a>
+                </Link>
             </div>
         </div>
 

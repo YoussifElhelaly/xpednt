@@ -1,10 +1,10 @@
-import HeaderImg from '../../../assets/media/ew1fahpb/2023-11-light-header4def.jpg'
+import HeaderImg from '../../../assets/img/x003.png'
 import Header from '../../../components/Header/Header'
 import LightRange from '../../../components/lightRange/lightRange'
 export default function LightsPage() {
     return (
         <>
-        <Header headerImg={HeaderImg}>
+        <Header headerImg={HeaderImg} flip={true}>
             <div>
                 <h1 className="header__headline col--xl-7">
                     Xpedent Lights
@@ -44,28 +44,7 @@ export default function LightsPage() {
                     </div>
             </div>
         </section>
-        <section id="module3" className="section image-text section--grey-extra-light-dusted">
-        
-            <div className="grid-wrap">
-                <div className="grid-row grid-row--align-center">
-                    <header className="col col--sm-6 col--md-5 section__header">
-        
-                            <h2 className="h1">Light accessories</h2>
-        
-                            <div className="rich-text">
-                                <p>Xpedent provides a range of products which complement and complete your loupes. Our specialists in optics and ergonomics ensure a solution tailored entirely to you.</p>
-                            </div>
-        
-            <a className="btn btn--link " href="/loupes-lights/accessories/#module13" title="Accessories" rel="noreferrer">
-            <span>Accessories</span>
-            </a>
-                    </header>
-                    <div className="col col--sm-6 col--md-7">
-                            <img className="lazy margin-auto lazy--loaded" src="/media/4rmpvhnm/acces_header_01.jpg?crop=0.29531250000000003,0.26944444444444443,0.036952457264957127,0.079573721778022716&amp;cropmode=percentage&amp;width=930&amp;height=680&amp;quality=76&amp;bgcolor=fff&amp;rnd=132793016231170000" alt="Ultra compact LED loupe light"/>
-                    </div>
-                </div>
-            </div>
-        </section>
+
         </>
     )
 } 

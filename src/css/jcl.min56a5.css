@@ -10534,7 +10534,6 @@ html {
     flex-direction: column;
     justify-content: center;
     max-width: 520px;
-    position: absolute;
     opacity: 0;
     pointer-events: none;
     transition: all .5s ease
@@ -10982,9 +10981,7 @@ select.input-text {
     border-top: 1px solid #fff
 }
 
-.step-list-item.current {
-    background-color: #741a86
-}
+
 
 .step-list-item.current .step-text * {
     color: #fff

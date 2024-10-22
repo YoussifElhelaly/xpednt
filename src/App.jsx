@@ -1,5 +1,5 @@
 import './App.css';
-import { Route, Routes } from 'react-router-dom';
+import { Route, Routes, useLocation, useRoutes } from 'react-router-dom';
 import HomePage from './pages/Home';
 import AboutPage from './pages/about';
 import Navbar from './components/Navbar/navbar';
@@ -22,11 +22,18 @@ import LightsPage from './pages/loupesLights/lights/lights';
 import AccessoriesPage from './pages/loupesLights/Accessories/Accessories';
 import CreateMode from './pages/loupesLights/loupes/createMode/createMode';
 import ReadyMade from './pages/loupesLights/loupes/readyMode/readyMode';
+import CustomeYourLoupe from './pages/3dModels/CustomeLoupe';
+
 
 function App() {
+  let location = useLocation()
+  console.log(location)
   return (
     <>
-    <Navbar />
+    {
+      location.pathname != "/CustomeYourLoupe" &&
+        <Navbar />
+    }
   <Routes>
     <Route element={<HomePage/>} path='/' />
     <Route element={<AboutPage/>} path='/about' />
@@ -46,9 +53,14 @@ function App() {
     <Route element={<WarrantyPage/>} path='/loupes-lights/Warranty' />
     <Route element={<LightsPage/>} path='/loupes-lights/lights' />
     <Route element={<AccessoriesPage/>} path='/loupes-lights/accessories' />
+    <Route element={<CustomeYourLoupe/>} path='/CustomeYourLoupe' />
   </Routes>
   {/* <TrySection/> */}
-  <Footer/>
+  {
+      location.pathname != "/CustomeYourLoupe" &&
+      <Footer/>
+        
+    }
     </>
   );
 }

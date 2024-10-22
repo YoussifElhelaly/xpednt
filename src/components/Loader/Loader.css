@@ -1,0 +1,20 @@
+.glassesAnimation {
+    position:absolute;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+    top: 40%;
+  }
+   .glasses-loader-svgpath {
+       fill: none;
+       stroke: #707070;
+       stroke-miterlimit: 10;
+       stroke-dasharray: 1000;
+       stroke-dashoffset: 0;
+       stroke-width: 3;
+       animation: loaderdash 4s 500ms normal ease-in forwards;
+       animation-iteration-count: infinite;
+  }
+  @keyframes loaderdash {
+       from { stroke-dashoffset: 2000; } to { stroke-dashoffset: 0; }
+  }

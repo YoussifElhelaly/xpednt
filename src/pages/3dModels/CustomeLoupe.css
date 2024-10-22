@@ -1,0 +1,39 @@
+.CustomeYourLoupe {
+    background-color: #f6f6f6;
+    color: black !important;
+}
+
+.CustomeYourLoupe .ex-right {
+    flex-direction: column;
+    gap: 100px;
+}
+
+.CustomeYourLoupe .ex-steps {
+    height: auto;
+}
+
+.step-list-item {
+    position: relative;
+z-index: 2;
+}
+
+.step-list-item div{
+    position: relative;
+}
+
+.step-list-item::before {
+    background-color: #741a86;
+    content:"" ;
+    position: absolute;
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transition: 0.3s;
+
+}
+
+.step-list-item.current::before {
+    width: 100%;
+
+}

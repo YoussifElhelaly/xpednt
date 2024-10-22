@@ -1809,7 +1809,10 @@ nav li,nav ul {
 
 .filter__item__title {
     font-size: 2.4rem;
-    line-height: 1.1em
+    line-height: 1.1em;
+    display: block;
+    margin: auto;
+    width: fit-content;
 }
 
 .filter__item__richtext {
@@ -2038,6 +2041,7 @@ nav li,nav ul {
     left: 0;
     content: "";
     opacity: 0.8;
+    z-index: 12;
     background: linear-gradient(90deg, rgba(0,0,0,1) 20%, rgba(255,255,255,0) 100%);
     transition: opacity 2s cubic-bezier(.25,.46,.45,.94) .2s;
 }

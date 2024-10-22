@@ -9,6 +9,10 @@ export default function Navbar() {
 
     const navRef = useRef() 
 
+    function handleCloseNav() {
+        navRef.current.classList.remove("nav--open")
+    }
+
     useEffect(()=>{
         let lastScrollTop = document.documentElement.scrollTop;
         window.addEventListener('scroll', (e)=> {
@@ -62,7 +66,7 @@ export default function Navbar() {
             <ul class="nav__grid">
                 <li class="nav__grid__block">
                     <div class="nav__grid__link-list">
-                        <Link to="#" role="button">
+                        <Link to="/Profession" onClick={handleCloseNav} role="button">
                             <small>01.</small>
                             <span>Profession</span>
                         </Link>
@@ -77,7 +81,7 @@ export default function Navbar() {
                 </li>
                 <li class="nav__grid__block">
                     <div class="nav__grid__link-list">
-                            <Link to="#" role="button">
+                            <Link to="/loupes-lights" onClick={handleCloseNav} role="button">
                                 <small>02.</small>
                                 <span>Loupes &amp; Lights</span>
                             </Link>
@@ -94,7 +98,7 @@ export default function Navbar() {
                 </li>
                 <li class="nav__grid__block">
                     <div class="nav__grid__link-list">
-                            <Link to="/ergonomics" title="Ergonomics">
+                            <Link to="/ergonomics" onClick={handleCloseNav} title="Ergonomics">
                                 <small>03.</small>
                                 <span>Ergonomics</span>
                             </Link>
@@ -103,7 +107,7 @@ export default function Navbar() {
                 </li>
                 <li class="nav__grid__block">
                     <div class="nav__grid__link-list">
-                            <Link to="#" role="button">
+                            <Link to="/about-us" onClick={handleCloseNav} role="button">
                                 <small>04.</small>
                                 <span>About Us</span>
                             </Link>
@@ -118,7 +122,7 @@ export default function Navbar() {
                 </li>
                 <li class="nav__grid__block">
                     <div class="nav__grid__link-list">
-                            <Link to="/contact" title="Contact">
+                            <Link to="/contact" onClick={handleCloseNav} title="Contact">
                                 <small>05.</small>
                                 <span>Contact</span>
                             </Link>
@@ -127,7 +131,7 @@ export default function Navbar() {
                 </li>
                 <li class="nav__grid__block">
                     <div class="nav__grid__link-list">
-                            <Link to="/support" title="Support">
+                            <Link to="/support" onClick={handleCloseNav} title="Support">
                                 <small>06.</small>
                                 <span>Support</span>
                             </Link>
@@ -156,7 +160,7 @@ export default function Navbar() {
                                             <span class="nav__topmenu__sub-image">
                                             <ul>
                                                         <li><Link to="/loupes-lights/loupes/ready-made">Ready Made</Link></li>
-                                                        <li><Link to="/loupes-lights/loupes/create-mode"> Custome Made</Link></li>
+                                                        <li><Link to="/loupes-lights/loupes/create-mode"> Custom Made</Link></li>
                                                     </ul>
                                                     </span></li>
                                             <li><Link to="/loupes-lights/magnifications" title="Magnifications">Magnifications</Link> <span class="nav__topmenu__sub-image"></span></li>

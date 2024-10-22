@@ -133,28 +133,7 @@ export default function LoupesLights() {
                     </div>
                 </div>
             </section>
-            <section id="module6" class="section image-text ">
-
-                <div class="grid-wrap">
-                    <div class="grid-row grid-row--align-center">
-                        <header class="col col--sm-6 col--md-5 section__header">
-
-                                <h2 class="h1">Accessories</h2>
-
-                                <div class="rich-text">
-                                    <p>ExamVision provides a range of products which complement and complete your loupe and light.</p>
-                                </div>
-
-                <a class="btn btn--link " href="/loupes-lights/accessories/" title="Accessories" rel="noreferrer">
-                <span>Accessories</span>
-                </a>
-                        </header>
-                        <div class="col col--sm-6 col--md-7">
-                                <img class="lazy margin-auto lazy--loaded" src={rmpvhnm} alt="Female dentist wears Visionshield to protect her dental loupes Galilean HD in Icon frame v2"/>
-                        </div>
-                    </div>
-                </div>
-            </section>
+       
         </>
     )   
 }
