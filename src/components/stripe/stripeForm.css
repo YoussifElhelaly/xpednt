@@ -1,0 +1,46 @@
+.formStripe {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 350px;
+    color: black;
+}
+
+.formStripe .countryCity {
+    display: flex;
+    gap: 5px;
+}
+
+.formStripe .inputStripe , .formStripe select{
+    padding: 12px 10px !important;
+    margin: 10px 0;
+    background-color: white;
+    border: 1px solid transparent;
+    transition: 0.3s;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.formStripe .inputStripe:invalid,
+.formStripe select:invalid {
+    border-color:  red;
+}
+
+.formStripe .inputStripe:valid,
+.formStripe select:valid {
+    border-color: green;
+} 
+
+.formStripe iframe {
+    background-color: white;
+}
+
+
+.formStripe .CardField {
+    
+}
+
+.CardField.is-link-hidden.previous-link-hidden.CardField--ltr {
+    display: flex;
+    align-items: center;
+}

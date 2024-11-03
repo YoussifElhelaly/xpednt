@@ -2,6 +2,7 @@ import Professional from "../components/chooseProfessional/chooseProfessinal"
 import headerImg from '../assets/img/00.png'
 import Header from "../components/Header/Header"
 import Certf from "../components/certifcate/certf"
+import TestmonilsSlider from "../components/testmonilsSlider/testmonilsSlider"
 
 export default function HomePage() {
 
@@ -24,6 +25,7 @@ export default function HomePage() {
         </Header>
             <div className="home">
                 <Certf/>
+                <TestmonilsSlider/>
                 <Professional/>
             </div>
         </>

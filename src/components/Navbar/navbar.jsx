@@ -90,7 +90,7 @@ export default function Navbar() {
                                 <li><Link to="/loupes-lights" title="Loupes &amp; Lights">Loupes &amp; Lights</Link></li>
                                     <li><Link to="/loupes-lights/loupes" title="Loupes">Loupes</Link></li>
                                     <li><Link to="/loupes-lights/magnifications" title="Magnifications">Magnifications</Link></li>
-                                    <li><Link to="/loupes-lights/frames" title="Frames">Frames</Link></li>
+                                
                                     <li><Link to="/loupes-lights/lights" title="Lights">Lights</Link></li>
                                     <li><Link to="/loupes-lights/warranty" title="Warranty">Warranty</Link></li>
                                                             </ul>
@@ -105,21 +105,7 @@ export default function Navbar() {
 
                     </div>
                 </li>
-                <li class="nav__grid__block">
-                    <div class="nav__grid__link-list">
-                            <Link to="/about-us" onClick={handleCloseNav} role="button">
-                                <small>04.</small>
-                                <span>About Us</span>
-                            </Link>
-
-                            <ul data-bg="media/tvdbwr13/about_header_01578e.jpg?anchor=center&amp;mode=crop&amp;width=1920&amp;height=1080&amp;quality=76&amp;rnd=132467162225470000">
-                                <li><Link to="/about-us" title="About Us">About Us</Link></li>
-                                                                        <li><Link to="/career" title="Career">Career</Link></li>
-                                        <li><Link to="/testimonials" title="Testimonials">Testimonials</Link></li>
-                                        <li><Link to="/news-events" title="News &amp; Events">News &amp; Events</Link></li>
-                            </ul>
-                    </div>
-                </li>
+              
                 <li class="nav__grid__block">
                     <div class="nav__grid__link-list">
                             <Link to="/contact" onClick={handleCloseNav} title="Contact">
@@ -129,15 +115,7 @@ export default function Navbar() {
 
                     </div>
                 </li>
-                <li class="nav__grid__block">
-                    <div class="nav__grid__link-list">
-                            <Link to="/support" onClick={handleCloseNav} title="Support">
-                                <small>06.</small>
-                                <span>Support</span>
-                            </Link>
-
-                    </div>
-                </li>
+             
             </ul>
             <div class="grid-wrap">
                     <button class="nav__btn" onClick={()=>{
@@ -164,7 +142,6 @@ export default function Navbar() {
                                                     </ul>
                                                     </span></li>
                                             <li><Link to="/loupes-lights/magnifications" title="Magnifications">Magnifications</Link> <span class="nav__topmenu__sub-image"></span></li>
-                                            <li><Link to="/loupes-lights/frames" title="Frames">Frames</Link> <span class="nav__topmenu__sub-image" ></span></li>
                                             <li><Link to="/loupes-lights/lights" title="Lights">Lights</Link> <span class="nav__topmenu__sub-image"></span></li>
                                             <li><Link to="/loupes-lights/warranty" title="Warranty">Warranty</Link> <span class="nav__topmenu__sub-image"></span></li>
 
@@ -173,21 +150,11 @@ export default function Navbar() {
                             <li>
                                 <Link to="/ergonomics" title="Ergonomics">Ergonomics</Link>
                             </li>
-                            <li>
-                                <Link to="/about-us" title="About Us">About Us</Link>
-                                    <ul class="nav__topmenu__sub">
-
-                                                <li><Link to="/career" title="Career">Career</Link> <span class="nav__topmenu__sub-image" ></span></li>
-                                                <li><Link to="/testimonials" title="Testimonials">Testimonials</Link> <span class="nav__topmenu__sub-image" ></span></li>
-                                                <li><Link to="/news-events" title="News &amp; Events">News &amp; Events</Link> <span class="nav__topmenu__sub-image" ></span></li>
-                                    </ul>
-                            </li>
+                           
                             <li>
                                 <Link to="/contact" title="Contact">Contact</Link>
                             </li>
-                            <li>
-                                <Link to="support" title="Support">Support</Link>
-                            </li>
+                           
                     </ul>
                
             </div>

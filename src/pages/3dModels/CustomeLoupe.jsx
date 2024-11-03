@@ -22,6 +22,9 @@ import { Light3d4 } from "../../components/Loups3d/light4";
 import { Light3d3 } from "../../components/Loups3d/light3";
 import { Light3d2 } from "../../components/Loups3d/light2";
 import { Light3d1 } from "../../components/Loups3d/light1";
+import StripePage from "../../components/stripe/stripePage";
+import StripeForm from "../../components/stripe/stripeForm";
+import axios from "axios";
 export default function CustomeYourLoupe () {
     const { steps, currentStepIndex , goTo, step, isFirstStep, isLastStep, back, next } =
     useMultistepForm([
@@ -29,7 +32,21 @@ export default function CustomeYourLoupe () {
       <SelectTipStep  />,
       <SelectLoupeStep  />,
       <SelectLightStep   />,
+      <StripeForm/>
     ])
+    
+    async function callStripe () {
+       let res = await axios.post("http://192.168.1.98/Lyrebird/dashbordXpedent/public/api/create-payment-intent" , {
+            "amount":"10000",
+            "currency" : "AED",
+            "customer_name" : "Amr Ayad",
+            "customer_email" : "amrayad454@gmail.com",
+            "payment_method" : "card"
+        })
+        console.log(res.data.data)
+        
+    }
+
 
   const selectFrameValue = useRecoilValue(selectFrameAtom)
   const selectLightValue = useRecoilValue(selectLightAtom)
@@ -130,7 +147,7 @@ export default function CustomeYourLoupe () {
                                 </div>
                                 }
                                 </div>
-                                
+                
                                   
                            
                         </div>

@@ -23,7 +23,7 @@ import AccessoriesPage from './pages/loupesLights/Accessories/Accessories';
 import CreateMode from './pages/loupesLights/loupes/createMode/createMode';
 import ReadyMade from './pages/loupesLights/loupes/readyMode/readyMode';
 import CustomeYourLoupe from './pages/3dModels/CustomeLoupe';
-
+import 'swiper/css/navigation';
 
 function App() {
   let location = useLocation()

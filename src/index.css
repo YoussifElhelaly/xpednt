@@ -4,20 +4,23 @@
   background-color: white;
 }
 .nav__topmenu__sub li a[title="Dental"] + span.nav__topmenu__sub-image {
-    background: url("./assets/media/onwft3k0/dental_header_013c2d.jpg");
+    background: url("./assets/img/IMG_1377-2.jpg");
 }
 .nav__topmenu__sub li a[title="Hygienist"] + span.nav__topmenu__sub-image {
   background: url("./assets/media/51dfj4fw/professions-ess-hygienist-header_02-20238e56.jpg");
 }
 .nav__topmenu__sub li a[title="Surgical"] + span.nav__topmenu__sub-image {
-  background: url("./assets/media/taqbdta4/2023-11-medical-header65b8.jpg");
+  background: url("./assets/img/IMG_0435.JPG");
 }
 .nav__topmenu__sub li a[title="Student"] + span.nav__topmenu__sub-image {
-  background: url("./assets/media/tagndumv/professions-ess-student-headerca62.jpg");
+  background: url("./assets/img/IMG_1385-1.jpg");
 }
 .nav__topmenu__sub li a[title="Others"] + span.nav__topmenu__sub-image {
   background: url("./assets/media/4pfnzmmy/2023-11-others-headerab60.jpg");
 }
+/* import dentalImg from '../../assets/img/IMG_1377-2.jpg'
+import surgicalImg from '../../assets/img/IMG_0435.JPG'
+import studentImg from '../../assets/img/IMG_1385-1.jpg' */
 /* .nav__topmenu__sub li a[title="Loupes"] + span.nav__topmenu__sub-image {
   background: url("./assets/media/hoki0k5r/loupes_header_01d4d6.jpg");
 } */

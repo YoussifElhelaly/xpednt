@@ -7,7 +7,7 @@ import { BrowserRouter } from 'react-router-dom';
 import { RecoilRoot } from 'recoil';
 import './css/jcl.min56a5.css'
 import './css/main.min8459.css'
-
+import 'swiper/css/pagination';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
 
