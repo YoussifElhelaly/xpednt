@@ -4,6 +4,7 @@ import { Elements, CardElement, useStripe, useElements } from '@stripe/react-str
 import axios from 'axios';
 import './stripeForm.css'
 import { CountryDropdown, RegionDropdown } from 'react-country-region-selector';
+import axiosInstance from '../../api/apiAiox';
 
 export default function StripePage() {
     const stripe = useStripe();
@@ -30,7 +31,7 @@ export default function StripePage() {
 
   useEffect(()=>{
     async function callStripe() {
-      let res = await axios.post("http://192.168.1.8/Lyrebird/dashbordXpedent/public/api/create-payment-intent" , {
+      let res = await axiosInstance.post("/create-payment-intent" , {
            "amount":100 * 10,
            "currency" : "GBP",
            "customer_name" : "mohamed",

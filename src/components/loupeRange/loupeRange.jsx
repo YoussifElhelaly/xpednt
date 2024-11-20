@@ -1,9 +1,7 @@
 import LoupeRangeCard from "./loupeRangeCard/loupeRangeCard";
 import og2futik from '../../assets/img/x003.png'
-import akakongy from '../../assets/media/akakongy/2024-02-kr-gateway350f.jpg'
-import qjgh03av from '../../assets/media/qjgh03av/kk_detail19523.jpg'
-import emjh5xtb from '../../assets/media/emjh5xtb/2023-11-gal-page-front-loupe2d74.jpg'
-import ccdnjr30 from '../../assets/media/ccdnjr30/demo-ergonomics.jpg'
+import qjgh03av from '../../assets/img/004.png'
+
 export default function LoupeRange() {
     return (
         <section id="module1" class="section section--dark ta-center ">

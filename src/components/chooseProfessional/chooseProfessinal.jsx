@@ -8,7 +8,19 @@ import 'swiper/css';
 import 'swiper/css/effect-cards';
 
 import './style.css';
+import { useEffect, useState } from "react";
+import getProfession from "../../features/getProfession";
 export default function Professional() {
+
+    const [data , setData] = useState([])
+
+    useEffect(()=>{
+        const fetchData =async ()=>{
+            setData(await getProfession())
+        }
+        fetchData()
+    },[])
+
     return(
         <section id="module2" class="section gateway section--dark">
             <div class="grid-wrap">
@@ -25,17 +37,18 @@ export default function Professional() {
                 modules={[EffectCards]}
                 className="mySwiper"
             >
-                <SwiperSlide>
-                            <ProfessionalCard img={studentImg} title={"Student"}/>
+                {
+                    data.map((proff)=>{
+                        console.log(proff)
+                        return (
+                            <SwiperSlide>
+                                        <ProfessionalCard proff={proff} img={studentImg} title={"Student"}/>
 
-                </SwiperSlide>
-                <SwiperSlide>
-                            <ProfessionalCard img={surgicalImg} title={"Surgical"}/>
-                </SwiperSlide>
-                <SwiperSlide>
-                            <ProfessionalCard img={dentalImg} title={"Dental"}/>
-
-                </SwiperSlide>
+                            </SwiperSlide>
+                        )
+                    })
+                }
+          
             </Swiper>
                     </div>
                 </div>

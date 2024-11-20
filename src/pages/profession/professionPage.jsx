@@ -1,6 +1,6 @@
 import Header from "../../components/Header/Header";
 import headerImg from '../../assets/img/018.png'
-import nawk0ipq from '../../assets/media/nawk0ipq/gal_gallery_02.jpg'
+import nawk0ipq from '../../assets/img/IMG_1385-1.jpg'
 import Professional from "../../components/chooseProfessional/chooseProfessinal";
 import './professionPage.css'
 export default function ProfessionPage() {

@@ -12,7 +12,7 @@ export default function SelectFrameStep() {
 
     const [_ , setSelectFrame] = useRecoilState(selectFrameAtom)
 
-    const [faceColor,setFaceColor] = useRecoilState(faceColorAtom)
+    // const [faceColor,setFaceColor] = useRecoilState(faceColorAtom)
 
     return(
         <div id="step_1" class="ex-configurator-step active">
@@ -41,10 +41,10 @@ export default function SelectFrameStep() {
 
         </div>
       
-        <div className="selectColor">
+        {/* <div className="selectColor">
            <ColorPicker setColor={setFaceColor} color={faceColor}/>
             
-          </div>
+          </div> */}
      
     </div>
     )

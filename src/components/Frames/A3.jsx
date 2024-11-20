@@ -15,7 +15,7 @@ import * as THREE from 'three';
 export default function A3(props) {
   // const { nodes, materials } = useGLTF('/A1-A4/A3.glb')
   const [armColor , setArmColor] = useRecoilState(armColorAtom)
-  const [faceColor , setFaceColor] = useRecoilState(faceColorAtom)
+  // const [faceColor , setFaceColor] = useRecoilState(faceColorAtom)
   const gltf = useLoader(GLTFLoader, '/frames/A3.glb');
 
   useEffect(() => {
@@ -24,13 +24,13 @@ export default function A3(props) {
         child.material.color = new THREE.Color(armColor); // Change color to red
         child.material.needsUpdate = true;
       }
-      if (child.name == "平面015" && child.isMesh) {
-        child.material.color = new THREE.Color(faceColor); // Change color to red
-        child.material.needsUpdate = true;
-      }
+      // if (child.name == "平面015" && child.isMesh) {
+      //   child.material.color = new THREE.Color(faceColor); // Change color to red
+      //   child.material.needsUpdate = true;
+      // }
     });
     // gltf.scene.current.parent.remove(gltf.current);
-  }, [gltf , armColor,faceColor]);
+  }, [gltf , armColor]);
   return (
     <primitive object={gltf.scene}/>
   )

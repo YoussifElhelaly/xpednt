@@ -6,17 +6,11 @@
 .nav__topmenu__sub li a[title="Dental"] + span.nav__topmenu__sub-image {
     background: url("./assets/img/IMG_1377-2.jpg");
 }
-.nav__topmenu__sub li a[title="Hygienist"] + span.nav__topmenu__sub-image {
-  background: url("./assets/media/51dfj4fw/professions-ess-hygienist-header_02-20238e56.jpg");
-}
 .nav__topmenu__sub li a[title="Surgical"] + span.nav__topmenu__sub-image {
   background: url("./assets/img/IMG_0435.JPG");
 }
 .nav__topmenu__sub li a[title="Student"] + span.nav__topmenu__sub-image {
   background: url("./assets/img/IMG_1385-1.jpg");
-}
-.nav__topmenu__sub li a[title="Others"] + span.nav__topmenu__sub-image {
-  background: url("./assets/media/4pfnzmmy/2023-11-others-headerab60.jpg");
 }
 /* import dentalImg from '../../assets/img/IMG_1377-2.jpg'
 import surgicalImg from '../../assets/img/IMG_0435.JPG'
@@ -25,28 +19,28 @@ import studentImg from '../../assets/img/IMG_1385-1.jpg' */
   background: url("./assets/media/hoki0k5r/loupes_header_01d4d6.jpg");
 } */
 .nav__topmenu__sub li a[title="Magnifications"] + span.nav__topmenu__sub-image {
-  background: url("./assets/media/tbvb0ku0/mag_header_01bef3.jpg");
+  background: url("./assets/img/IMG_1377-2.jpg");
 }
 .nav__topmenu__sub li a[title="Optics & safety"] + span.nav__topmenu__sub-image {
-  background: url("./assets/media/2z2ff5zt/cases_header_01abb8.jpg");
+  background: url("./assets/img/IMG_1377-2.jpg");
 }
 .nav__topmenu__sub li a[title="Lights"] + span.nav__topmenu__sub-image {
-  background: url("./assets/media/ew1fahpb/2023-11-light-header5e33.jpg");
+  background: url("./assets/img/IMG_1377-2.jpg");
 }
 .nav__topmenu__sub li a[title="Accessories"] + span.nav__topmenu__sub-image {
-  background: url("./assets/media/n3abrceb/2023-11-accesories-header051b.jpg");
+  background: url("./assets/img/IMG_1377-2.jpg");
 }
 .nav__topmenu__sub li a[title="Warranty"] + span.nav__topmenu__sub-image {
-  background: url("./assets/media/3szmys2m/warranty_header_015d4c.jpg");
+  background: url("./assets/img/IMG_1377-2.jpg");
 }
 .nav__topmenu__sub li a[title="Career"] + span.nav__topmenu__sub-image {
-  background: url("./assets/media/nnrjufz0/2022-04-career-headere680.jpg");
+  background: url("./assets/img/IMG_1377-2.jpg");
 }
 .nav__topmenu__sub li a[title="Testimonials"] + span.nav__topmenu__sub-image {
-  background: url("./assets/media/2z2ff5zt/cases_header_01abb8.jpg");
+  background: url("./assets/img/IMG_1377-2.jpg");
 }
 .nav__topmenu__sub li a[title="News & Events"] + span.nav__topmenu__sub-image {
-  background: url("./assets/media/tukhn0ik/news_header_023fda.jpg");
+  background: url("./assets/img/IMG_1377-2.jpg");
 }
 
 html {

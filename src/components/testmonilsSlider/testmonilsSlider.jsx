@@ -4,7 +4,19 @@ import dentalImg from '../../assets/img/IMG_1377-2.jpg'
 import surgicalImg from '../../assets/img/IMG_0435.JPG'
 import studentImg from '../../assets/img/IMG_1385-1.jpg'
 import './TestimonialsSwiper.css'
+import { useEffect, useState } from "react";
+import getTesti from "../../features/getTesti";
 export default function TestmonilsSlider() {
+
+    const [data,setData] = useState([])
+
+    useEffect(()=>{
+        const fetchData = async ()=>{
+            setData(await getTesti())
+        }
+        fetchData()
+    },[])
+
     return (
         <section id="module2" class="section gateway section--dark">
             <div class="grid-wrap">
@@ -35,149 +47,28 @@ export default function TestmonilsSlider() {
                     modules={[Pagination , Navigation]}
                     className="TestimonialsSwiper"
                 >
-                    <SwiperSlide>
-                        <div class="col case" data-filter-value="Dental-prof, Loupes-prod, Lights-prod, Denmark">
-                                <div class="case__link">
-                                    <div class="case__image lazy lazy--bg lazy--placeholder lazy--loaded" style={{backgroundImage:`url(${dentalImg})` , backgroundSize:"cover"}}></div>
-                                    <div class="case__content">
-                                        <small class="case__subtitle">Dental</small>
-                                        <p class="case__headline h3">
-                                            I can feel a clear relief<br/>in my neck muscles
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <div class="col case" data-filter-value="Dental-prof, Loupes-prod, Lights-prod, Denmark">
-                                <div class="case__link">
-                                    <div class="case__image lazy lazy--bg lazy--placeholder lazy--loaded" style={{backgroundImage:`url(${dentalImg})` , backgroundSize:"cover"}}></div>
-                                    <div class="case__content">
-                                        <small class="case__subtitle">Dental</small>
-                                        <p class="case__headline h3">
-                                            I can feel a clear relief<br/>in my neck muscles
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <div class="col case" data-filter-value="Dental-prof, Loupes-prod, Lights-prod, Denmark">
-                                <div class="case__link">
-                                    <div class="case__image lazy lazy--bg lazy--placeholder lazy--loaded" style={{backgroundImage:`url(${dentalImg})` , backgroundSize:"cover"}}></div>
-                                    <div class="case__content">
-                                        <small class="case__subtitle">Dental</small>
-                                        <p class="case__headline h3">
-                                            I can feel a clear relief<br/>in my neck muscles
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <div class="col case" data-filter-value="Dental-prof, Loupes-prod, Lights-prod, Denmark">
-                                <div class="case__link">
-                                    <div class="case__image lazy lazy--bg lazy--placeholder lazy--loaded" style={{backgroundImage:`url(${dentalImg})` , backgroundSize:"cover"}}></div>
-                                    <div class="case__content">
-                                        <small class="case__subtitle">Dental</small>
-                                        <p class="case__headline h3">
-                                            I can feel a clear relief<br/>in my neck muscles
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <div class="col case" data-filter-value="Dental-prof, Loupes-prod, Lights-prod, Denmark">
-                                <div class="case__link">
-                                    <div class="case__image lazy lazy--bg lazy--placeholder lazy--loaded" style={{backgroundImage:`url(${dentalImg})` , backgroundSize:"cover"}}></div>
-                                    <div class="case__content">
-                                        <small class="case__subtitle">Dental</small>
-                                        <p class="case__headline h3">
-                                            I can feel a clear relief<br/>in my neck muscles
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <div class="col case" data-filter-value="Dental-prof, Loupes-prod, Lights-prod, Denmark">
-                                <div class="case__link">
-                                    <div class="case__image lazy lazy--bg lazy--placeholder lazy--loaded" style={{backgroundImage:`url(${dentalImg})` , backgroundSize:"cover"}}></div>
-                                    <div class="case__content">
-                                        <small class="case__subtitle">Dental</small>
-                                        <p class="case__headline h3">
-                                            I can feel a clear relief<br/>in my neck muscles
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <div class="col case" data-filter-value="Dental-prof, Loupes-prod, Lights-prod, Denmark">
-                                <div class="case__link">
-                                    <div class="case__image lazy lazy--bg lazy--placeholder lazy--loaded" style={{backgroundImage:`url(${dentalImg})` , backgroundSize:"cover"}}></div>
-                                    <div class="case__content">
-                                        <small class="case__subtitle">Dental</small>
-                                        <p class="case__headline h3">
-                                            I can feel a clear relief<br/>in my neck muscles
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <div class="col case" data-filter-value="Dental-prof, Loupes-prod, Lights-prod, Denmark">
-                                <div class="case__link">
-                                    <div class="case__image lazy lazy--bg lazy--placeholder lazy--loaded" style={{backgroundImage:`url(${dentalImg})` , backgroundSize:"cover"}}></div>
-                                    <div class="case__content">
-                                        <small class="case__subtitle">Dental</small>
-                                        <p class="case__headline h3">
-                                            I can feel a clear relief<br/>in my neck muscles
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <div class="col case" data-filter-value="Dental-prof, Loupes-prod, Lights-prod, Denmark">
-                                <div class="case__link">
-                                    <div class="case__image lazy lazy--bg lazy--placeholder lazy--loaded" style={{backgroundImage:`url(${dentalImg})` , backgroundSize:"cover"}}></div>
-                                    <div class="case__content">
-                                        <small class="case__subtitle">Dental</small>
-                                        <p class="case__headline h3">
-                                            I can feel a clear relief<br/>in my neck muscles
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <div class="col case" data-filter-value="Dental-prof, Loupes-prod, Lights-prod, Denmark">
-                                <div class="case__link">
-                                    <div class="case__image lazy lazy--bg lazy--placeholder lazy--loaded" style={{backgroundImage:`url(${dentalImg})` , backgroundSize:"cover"}}></div>
-                                    <div class="case__content">
-                                        <small class="case__subtitle">Dental</small>
-                                        <p class="case__headline h3">
-                                            I can feel a clear relief<br/>in my neck muscles
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <div class="col case" data-filter-value="Dental-prof, Loupes-prod, Lights-prod, Denmark">
-                                <div class="case__link">
-                                    <div class="case__image lazy lazy--bg lazy--placeholder lazy--loaded" style={{backgroundImage:`url(${dentalImg})` , backgroundSize:"cover"}}></div>
-                                    <div class="case__content">
-                                        <small class="case__subtitle">Dental</small>
-                                        <p class="case__headline h3">
-                                            I can feel a clear relief<br/>in my neck muscles
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                    </SwiperSlide>
+                    {
+                        data.map((testi)=>{
+                            console.log(testi)
+                            return(
+                                <SwiperSlide>
+                                    <div class="col case" data-filter-value="Dental-prof, Loupes-prod, Lights-prod, Denmark">
+                                            <div class="case__link">
+                                                <div class="case__image lazy lazy--bg lazy--placeholder lazy--loaded" style={{backgroundImage:`url(${testi.image})` , backgroundSize:"cover"}}></div>
+                                                <div class="case__content">
+                                                    <small class="case__subtitle">{testi.name}</small>
+                                                    <p class="case__headline h3">
+                                                       {testi.review_content}
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                </SwiperSlide>
+                            )
+                        })
+                    }
+                    
+              
                
                 </Swiper>
             </div>

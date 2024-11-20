@@ -1,5 +1,5 @@
 
-import headerImg from '../assets/media/b2jjln5g/2024-01-loupes-lights-page-header624b.jpg'
+import headerImg from '../assets/img/021.png'
 import Header from "../components/Header/Header";
 
 

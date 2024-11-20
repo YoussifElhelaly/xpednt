@@ -1,8 +1,6 @@
 import Header from "../../../../components/Header/Header";
 import headerImg from '../../../../assets/img/020.png'
-import LoupeRange from "../../../../components/loupeRange/loupeRange";
-import ccdnjr30 from '../../../../assets/media/ccdnjr30/demo-ergonomics.jpg'
-import img from '../../../../assets/img/021.png'
+import ccdnjr30 from '../../../../assets/img/021.png'
 import './readyMade.css'
 
 export default function ReadyMade() {

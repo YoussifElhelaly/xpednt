@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 // import headerImg from '../../assets/media/b2jjln5g/2024-01-loupes-lights-page-header.jpg'
 import logo from '../../assets/img/logo.png'
-import PDImg from '../../assets/media/onwft3k0/dental_header_010eb1.jpg'
+import PDImg from '../../assets/img/00.png'
 import { useEffect, useRef } from "react";
 
 export default function Navbar() {

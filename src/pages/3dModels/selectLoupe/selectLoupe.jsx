@@ -1,10 +1,13 @@
 import { useRecoilState } from "recoil"
 import loupe1 from "../../../assets/media/zsyd24gt/kk_new.jpg"
 import selectLoupeAtom from "../../../atoms/selectLoup"
+import armColorAtom from "../../../atoms/armColor"
+import loupeColorAtom from "../../../atoms/loupeColor"
 
 export default function SelectLoupeStep() {
 
     const [selectLight, setSelectLight] = useRecoilState(selectLoupeAtom)
+    const [armColor,setArmColor] = useRecoilState(loupeColorAtom)
     
   function handleSelectLight(light) {
     if(light == selectLight) {
@@ -58,7 +61,29 @@ export default function SelectLoupeStep() {
 
         <div id="a-change-loups-desc" class="ex-configurator-step-description" >Select the loupe of your choice.</div>
 
- 
+ <div className="selectColor d-flex">
+            <div class={`ex-option-control-2 ${armColor == "#5487a3" && "active"}`} onClick={()=>{
+                setArmColor("#5487a3")
+            }}  data-group="frame_color">
+                 <div class="ex-option-control-2-outer" style={{borderColor: "#5487a3"}}></div>
+                 <div class="ex-option-control-2-inner" style={{backgroundColor: "#5487a3"}}></div>
+                 <span>Antique Plum</span>
+             </div>
+            <div class={`ex-option-control-2 ${armColor == "#a7896b" && "active"}`} onClick={()=>{
+                setArmColor("#a7896b")
+            }}  data-group="frame_color">
+                 <div class="ex-option-control-2-outer" style={{borderColor: "#a7896b"}}></div>
+                 <div class="ex-option-control-2-inner" style={{backgroundColor: "#a7896b"}}></div>
+                 <span>Antique Plum</span>
+             </div>
+            <div class={`ex-option-control-2 ${armColor == "#3f4344" && "active"}`} onClick={()=>{
+                setArmColor("#3f4344")
+            }}  data-group="frame_color">
+                 <div class="ex-option-control-2-outer" style={{borderColor: "#3f4344"}}></div>
+                 <div class="ex-option-control-2-inner" style={{backgroundColor: "#3f4344"}}></div>
+                 <span>Antique Plum</span>
+             </div>
+          </div>
     </div>
 
     )

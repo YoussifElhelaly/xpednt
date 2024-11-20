@@ -1,11 +1,10 @@
 import Header from "../../components/Header/Header";
 import headerImg from '../../assets/img/004.png'
-import tmrnt24s from '../../assets/media/tmrnt24s/loupes_gate_02.jpg'
-import oprfdcgt from '../../assets/media/oprfdcgt/2023-11-lights-gate.jpeg'
-import v0vbfil2m from '../../assets/media/0vbfil2m/loupes-light-page-mag-image-b.jpg'
-import zye5rrj from '../../assets/media/1zye5rrj/reviews_hd_01.jpg'
-import oa3ixhy3 from '../../assets/media/oa3ixhy3/frame_mixed_01.jpg'
-import rmpvhnm from '../../assets/media/4rmpvhnm/acces_header_01.jpg'
+import oprfdcgt from '../../assets/img/004.png'
+import v0vbfil2m from '../../assets/img/004.png'
+import zye5rrj from '../../assets/img/004.png'
+import oa3ixhy3 from '../../assets/img/004.png'
+
 import video from '../../assets/loupe.mp4'
 export default function LoupesLights() {
     return (

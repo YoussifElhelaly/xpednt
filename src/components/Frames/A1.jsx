@@ -14,7 +14,7 @@ import * as THREE from 'three';
 export function A1(props) {
  
   const [armColor , setArmColor] = useRecoilState(armColorAtom)
-  const [faceColor , setFaceColor] = useRecoilState(faceColorAtom)
+  // const [faceColor , setFaceColor] = useRecoilState(faceColorAtom)
 
   const gltf = useLoader(GLTFLoader, '/frames/A1.glb');
 
@@ -24,12 +24,12 @@ export function A1(props) {
         child.material.color = new THREE.Color(armColor); // Change color to red
         child.material.needsUpdate = true;
       }
-      if (child.name == "mesh046" && child.isMesh) {
-        child.material.color = new THREE.Color(faceColor); // Change color to red
-        child.material.needsUpdate = true;
-      }
+      // if (child.name == "mesh046" && child.isMesh) {
+      //   child.material.color = new THREE.Color(faceColor); // Change color to red
+      //   child.material.needsUpdate = true;
+      // }
     });
-  }, [gltf , armColor,faceColor]);
+  }, [gltf , armColor]);
 
   return (
     <>

@@ -1,5 +1,5 @@
 import Header from "../../../components/Header/Header";
-import HeaderImg from "../../../assets/media/3szmys2m/warranty_header_01802f.jpg";
+import HeaderImg from "../../../assets/img/IMG_1102.jpg";
 export default function WarrantyPage () {
     return(
         <>

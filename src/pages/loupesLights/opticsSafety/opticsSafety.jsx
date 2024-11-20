@@ -1,5 +1,5 @@
 import Header from "../../../components/Header/Header";
-import HeaderImg from '../../../assets/media/2z2ff5zt/cases_header_01abb8.jpg'
+import HeaderImg from '../../../assets/img/SGS_Logo.svg.png'
 export default function OpticsSafetyPage() {
     return(
         <>

@@ -10,8 +10,28 @@ export default function SelectTipStep() {
         <div class="ex-configurator-step-header"><h3>TEMPLE TIP COLOUR</h3></div>
         <div id="a-change-tips-color" class="ex-configurator-step-options">
                    
-        <div className="selectColor">
-           <ColorPicker setColor={setArmColor} color={armColor} />
+        <div className="selectColor d-flex">
+            <div class={`ex-option-control-2 ${armColor == "#5487a3" && "active"}`} onClick={()=>{
+                setArmColor("#5487a3")
+            }}  data-group="frame_color">
+                 <div class="ex-option-control-2-outer" style={{borderColor: "#5487a3"}}></div>
+                 <div class="ex-option-control-2-inner" style={{backgroundColor: "#5487a3"}}></div>
+                 <span>Antique Plum</span>
+             </div>
+            <div class={`ex-option-control-2 ${armColor == "#a7896b" && "active"}`} onClick={()=>{
+                setArmColor("#a7896b")
+            }}  data-group="frame_color">
+                 <div class="ex-option-control-2-outer" style={{borderColor: "#a7896b"}}></div>
+                 <div class="ex-option-control-2-inner" style={{backgroundColor: "#a7896b"}}></div>
+                 <span>Antique Plum</span>
+             </div>
+            <div class={`ex-option-control-2 ${armColor == "#3f4344" && "active"}`} onClick={()=>{
+                setArmColor("#3f4344")
+            }}  data-group="frame_color">
+                 <div class="ex-option-control-2-outer" style={{borderColor: "#3f4344"}}></div>
+                 <div class="ex-option-control-2-inner" style={{backgroundColor: "#3f4344"}}></div>
+                 <span>Antique Plum</span>
+             </div>
           </div>
         </div>
  

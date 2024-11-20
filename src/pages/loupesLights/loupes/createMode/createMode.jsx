@@ -1,7 +1,7 @@
 import Header from "../../../../components/Header/Header";
 import headerImg from '../../../../assets/img/IMG_1102.jpg'
 import LoupeRange from "../../../../components/loupeRange/loupeRange";
-import ccdnjr30 from '../../../../assets/media/ccdnjr30/demo-ergonomics.jpg'
+import ccdnjr30 from '../../../../assets/img/IMG_1102.jpg'
 
 export default function CreateMode() {
     return(

@@ -24,12 +24,15 @@ import CreateMode from './pages/loupesLights/loupes/createMode/createMode';
 import ReadyMade from './pages/loupesLights/loupes/readyMode/readyMode';
 import CustomeYourLoupe from './pages/3dModels/CustomeLoupe';
 import 'swiper/css/navigation';
+import ProfessionDetails from './pages/profession/details/professionDetails';
+import { Toaster } from 'sonner';
 
 function App() {
   let location = useLocation()
   console.log(location)
   return (
     <>
+       <Toaster position="top-right" richColors/>
     {
       location.pathname != "/CustomeYourLoupe" &&
         <Navbar />
@@ -39,11 +42,12 @@ function App() {
     <Route element={<AboutPage/>} path='/about' />
     <Route element={<ContactUs/>} path='/contact' />
     <Route element={<ProfessionPage/>} path='/profession' />
-    <Route element={<DentalPage/>} path='/profession/dental' />
+    <Route element={<ProfessionDetails/>} path='/profession/:proffId' />
+    {/* <Route element={<DentalPage/>} path='/profession/dental' />
     <Route element={<HygienistPage/>} path='/profession/hygienist' />
     <Route element={<SurgicalPage/>} path='/profession/surgical' />
     <Route element={<StudentPage/>} path='/profession/student' />
-    <Route element={<OthersPage/>} path='/profession/others' />
+    <Route element={<OthersPage/>} path='/profession/others' /> */}
     <Route element={<ErgonomicsPage/>} path='/ergonomics' />
     <Route element={<LoupesLights/>} path='/loupes-lights' />
     <Route element={<CreateMode/>} path='/loupes-lights/loupes/create-mode' />
