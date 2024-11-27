@@ -47,6 +47,18 @@ export default function SelectLoupeStep() {
                         <img src={loupe1}/>
                         <span>AirGo x6.5</span>
                     </div>
+                    <div id="a_loups_kk57" class={`ex-option-control-1 v2 ${selectLight == 5 && "active"}`} onClick={()=>{
+                        handleSelectLight(5)
+                    }} data-group="loupes">
+                        <img src={loupe1}/>
+                        <span>slim Scope 3.5</span>
+                    </div>
+                    <div id="a_loups_kk57" class={`ex-option-control-1 v2 ${selectLight == 6 && "active"}`} onClick={()=>{
+                        handleSelectLight(6)
+                    }} data-group="loupes">
+                        <img src={loupe1}/>
+                        <span>slim Scope 6.5</span>
+                    </div>
                     {/* <div id="a_loups_kk57" class={`ex-option-control-1 v2 ${selectLight == 5 && "active"}`} onClick={()=>{
                         handleSelectLight(5)
                     }} data-group="loupes">

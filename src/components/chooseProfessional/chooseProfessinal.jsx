@@ -1,7 +1,7 @@
 import ProfessionalCard from "./chooseProfessionalCard/chooseProfessionalCard";
-import dentalImg from '../../assets/img/IMG_1377-2.jpg'
-import surgicalImg from '../../assets/img/IMG_0435.JPG'
-import studentImg from '../../assets/img/IMG_1385-1.jpg'
+import dentalImg from '../../assets/img/IMG_1377-2.webp'
+import surgicalImg from '../../assets/img/IMG_0435.webp'
+import studentImg from '../../assets/img/IMG_1385-1.webp'
 import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectCards} from "swiper/modules";
 import 'swiper/css';

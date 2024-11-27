@@ -6,7 +6,7 @@ export default function Header({headerImg , flip , children}) {
     return(
         <header class="header header--has-aside">
 
-        <div class="header__media lazy">
+        <div class="header__media ">
             <img src={headerImg} alt="" style={flip && {transform: "scaleX(-1)"}}/>
         </div>
 

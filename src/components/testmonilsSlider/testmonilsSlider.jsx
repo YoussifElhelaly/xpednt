@@ -1,8 +1,8 @@
 import { Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
-import dentalImg from '../../assets/img/IMG_1377-2.jpg'
-import surgicalImg from '../../assets/img/IMG_0435.JPG'
-import studentImg from '../../assets/img/IMG_1385-1.jpg'
+import dentalImg from '../../assets/img/IMG_1377-2.webp'
+import surgicalImg from '../../assets/img/IMG_0435.webp'
+import studentImg from '../../assets/img/IMG_1385-1.webp'
 import './TestimonialsSwiper.css'
 import { useEffect, useState } from "react";
 import getTesti from "../../features/getTesti";

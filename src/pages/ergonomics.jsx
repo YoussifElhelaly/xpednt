@@ -1,5 +1,5 @@
 import Header from "../components/Header/Header";
-import headerImg from '../assets/img/020.png'
+import headerImg from '../assets/img/020.webp'
 import { useEffect, useState } from "react";
 import getErgo from "../features/getErgo";
 export default function ErgonomicsPage() {

@@ -101,7 +101,7 @@ export default function OpticsSafetyPage() {
 
                         </header>
                         <div className="col col--sm-6 col--md-7">
-                                <img className="lazy margin-auto lazy--loaded" src="/media/234fuyvd/reviews_dental_01.jpg?anchor=center&amp;mode=crop&amp;width=930&amp;height=680&amp;quality=76&amp;bgcolor=fff&amp;rnd=132467132299770000" alt="REVIEWS DENTAL 01"/>
+                                <img className=" margin-auto " src="/media/234fuyvd/reviews_dental_01.jpg?anchor=center&amp;mode=crop&amp;width=930&amp;height=680&amp;quality=76&amp;bgcolor=fff&amp;rnd=132467132299770000" alt="REVIEWS DENTAL 01"/>
                         </div>
                     </div>
                 </div>

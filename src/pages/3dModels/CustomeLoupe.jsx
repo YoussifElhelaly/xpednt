@@ -25,6 +25,8 @@ import { Light3d1 } from "../../components/Loups3d/light1";
 import StripePage from "../../components/stripe/stripePage";
 import StripeForm from "../../components/stripe/stripeForm";
 import axios from "axios";
+import { Light3d5 } from "../../components/Loups3d/light5";
+import { Light3d6 } from "../../components/Loups3d/light6";
 export default function CustomeYourLoupe () {
     const { steps, currentStepIndex , goTo, step, isFirstStep, isLastStep, back, next } =
     useMultistepForm([
@@ -78,7 +80,9 @@ export default function CustomeYourLoupe () {
             case 4 : 
             return <Light3d4 />;
             case 5 : 
-            return <SlimScope6 />;
+            return <Light3d5 x={4}/>
+            case 6 : 
+            return <Light3d6 />;
             
           default:
             return null;

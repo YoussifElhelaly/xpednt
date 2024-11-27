@@ -1,5 +1,5 @@
 import Header from "../components/Header/Header";
-import headerImg from '../assets/img/IMG_1102.jpg'
+import headerImg from '../assets/img/IMG_1102.webp'
 import createContact from "../features/createContact";
 export default function ContactUs() {
 

@@ -1,5 +1,5 @@
 import { useRecoilState } from 'recoil'
-import dragonFly from '../../../assets/img/x001.png'
+import dragonFly from '../../../assets/img/x001.webp'
 import selectLightAtom from '../../../atoms/selectLight'
 export default function SelectLightStep() {
     const [selectLight, setSelectLight] = useRecoilState(selectLightAtom)

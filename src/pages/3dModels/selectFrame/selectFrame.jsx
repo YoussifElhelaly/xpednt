@@ -23,20 +23,20 @@ export default function SelectFrameStep() {
                         setSelectFrame(1)
                     }} class="ex-option-control-1 " data-group="frame_model">
                         <img src={CurveIcon} />
-                        <span><span class="underline"><span class="underline-hide">Curve</span></span></span>
+                        <span><span class="underline"><span class="underline-hide">Elvis</span></span></span>
                     </div>
                     <div id="a_models_carbonV2" onClick={()=>{
                         setSelectFrame(2)
                     }} class="ex-option-control-1 " data-group="frame_model">
                         <img src={CarbonIcon} />
-                        <span><span class="underline"><span class="underline-hide">Carbon </span></span></span>
+                        <span><span class="underline"><span class="underline-hide">Piccadilly </span></span></span>
                     </div>
                     
                     <div id="a_models_metro" onClick={()=>{
                         setSelectFrame(3)
                     }} class="ex-option-control-1 " data-group="frame_model">
                         <img src={MetroIcon} />
-                        <span><span class="underline"><span class="underline-hide">Essential Metro</span></span></span>
+                        <span><span class="underline"><span class="underline-hide">Holmes</span></span></span>
                     </div>
 
         </div>

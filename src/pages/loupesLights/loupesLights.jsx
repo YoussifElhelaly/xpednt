@@ -1,9 +1,9 @@
 import Header from "../../components/Header/Header";
-import headerImg from '../../assets/img/004.png'
-import oprfdcgt from '../../assets/img/004.png'
-import v0vbfil2m from '../../assets/img/004.png'
-import zye5rrj from '../../assets/img/004.png'
-import oa3ixhy3 from '../../assets/img/004.png'
+import headerImg from '../../assets/img/004.webp'
+import oprfdcgt from '../../assets/img/004.webp'
+import v0vbfil2m from '../../assets/img/004.webp'
+import zye5rrj from '../../assets/img/004.webp'
+import oa3ixhy3 from '../../assets/img/004.webp'
 
 import video from '../../assets/loupe.mp4'
 export default function LoupesLights() {

@@ -1,5 +1,5 @@
 
-import headerImg from '../assets/img/021.png'
+import headerImg from '../assets/img/021.webp'
 import Header from "../components/Header/Header";
 
 

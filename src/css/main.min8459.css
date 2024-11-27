@@ -233,8 +233,6 @@ html {
     display: inline-block;
     width: 64px;
     height: 64px;
-    -webkit-animation: wa-mediabox-preloader-container-rotate 1568ms linear infinite;
-    animation: wa-mediabox-preloader-container-rotate 1568ms linear infinite
 }
 
 .wa-mediabox-preloader .wa-mediabox-preloader-spinner {
@@ -243,9 +241,7 @@ html {
     height: 100%;
     opacity: 1;
     border-color: #2196f3;
-    -webkit-animation: wa-mediabox-preloader-fill-unfill-rotate 5332ms cubic-bezier(.4,0,.2,1) infinite both;
-    animation: wa-mediabox-preloader-fill-unfill-rotate 5332ms cubic-bezier(.4,0,.2,1) infinite both;
-    box-sizing: inherit
+  box-sizing: inherit
 }
 
 .wa-mediabox-preloader .wa-mediabox-preloader-clipper {
@@ -285,17 +281,13 @@ html {
     left: 0;
     border-right-color: transparent!important;
     transform: rotate(129deg);
-    -webkit-animation: wa-mediabox-preloader-left-spin 1333ms cubic-bezier(.4,0,.2,1) infinite both;
-    animation: wa-mediabox-preloader-left-spin 1333ms cubic-bezier(.4,0,.2,1) infinite both
-}
+ }
 
 .wa-mediabox-preloader .wa-mediabox-preloader-clipper.right .wa-mediabox-preloader-circle {
     left: -100%;
     border-left-color: transparent!important;
     transform: rotate(-129deg);
-    -webkit-animation: wa-mediabox-preloader-right-spin 1333ms cubic-bezier(.4,0,.2,1) infinite both;
-    animation: wa-mediabox-preloader-right-spin 1333ms cubic-bezier(.4,0,.2,1) infinite both
-}
+ }
 
 .wa-mediabox-preloader .wa-mediabox-preloader-patch {
     position: absolute;
@@ -785,10 +777,7 @@ img.lazy:not(.lazy--loaded) {
     object-position: center!important
 }
 
-img.lazy.lazy--loaded {
-    -webkit-animation: revealImg 2s forwards cubic-bezier(.22,.61,.36,1);
-    animation: revealImg 2s forwards cubic-bezier(.22,.61,.36,1)
-}
+
 
 .lazy--placeholder:not(.lazy--loaded) {
     background-size: auto!important;
@@ -1583,8 +1572,8 @@ nav li,nav ul {
 }
 
 .case:focus .case__image,.case:hover .case__image {
-    -webkit-animation: bluringFocus 1.2s cubic-bezier(.19,1,.22,1) forwards;
-    animation: bluringFocus 1.2s cubic-bezier(.19,1,.22,1) forwards
+    -webkit-animation: bluringFocus .5s cubic-bezier(.19,1,.22,1) forwards;
+    animation: bluringFocus .5s cubic-bezier(.19,1,.22,1) forwards
 }
 
 .case__content {
@@ -1852,8 +1841,8 @@ nav li,nav ul {
 
 .filter__item:hover .filter__item__image {
     will-change: filter;
-    -webkit-animation: bluringFocus 1.2s cubic-bezier(.19,1,.22,1) forwards;
-    animation: bluringFocus 1.2s cubic-bezier(.19,1,.22,1) forwards
+    -webkit-animation: bluringFocus .5s cubic-bezier(.19,1,.22,1) forwards;
+    animation: bluringFocus .5s cubic-bezier(.19,1,.22,1) forwards
 }
 
 .filter__item:hover:before {

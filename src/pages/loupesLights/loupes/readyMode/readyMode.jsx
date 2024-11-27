@@ -1,6 +1,6 @@
 import Header from "../../../../components/Header/Header";
-import headerImg from '../../../../assets/img/020.png'
-import ccdnjr30 from '../../../../assets/img/021.png'
+import headerImg from '../../../../assets/img/020.webp'
+import ccdnjr30 from '../../../../assets/img/021.webp'
 import './readyMade.css'
 
 export default function ReadyMade() {

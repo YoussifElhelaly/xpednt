@@ -16,21 +16,21 @@ export default function SelectTipStep() {
             }}  data-group="frame_color">
                  <div class="ex-option-control-2-outer" style={{borderColor: "#5487a3"}}></div>
                  <div class="ex-option-control-2-inner" style={{backgroundColor: "#5487a3"}}></div>
-                 <span>Antique Plum</span>
+                 <span>Light Blue</span>
              </div>
             <div class={`ex-option-control-2 ${armColor == "#a7896b" && "active"}`} onClick={()=>{
                 setArmColor("#a7896b")
             }}  data-group="frame_color">
                  <div class="ex-option-control-2-outer" style={{borderColor: "#a7896b"}}></div>
                  <div class="ex-option-control-2-inner" style={{backgroundColor: "#a7896b"}}></div>
-                 <span>Antique Plum</span>
+                 <span>Rose Gold</span>
              </div>
             <div class={`ex-option-control-2 ${armColor == "#3f4344" && "active"}`} onClick={()=>{
                 setArmColor("#3f4344")
             }}  data-group="frame_color">
                  <div class="ex-option-control-2-outer" style={{borderColor: "#3f4344"}}></div>
                  <div class="ex-option-control-2-inner" style={{backgroundColor: "#3f4344"}}></div>
-                 <span>Antique Plum</span>
+                 <span>Ultra Black</span>
              </div>
           </div>
         </div>

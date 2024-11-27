@@ -1,6 +1,6 @@
 import LoupeRangeCard from "./loupeRangeCard/loupeRangeCard";
 import og2futik from '../../assets/img/x003.png'
-import qjgh03av from '../../assets/img/004.png'
+import qjgh03av from '../../assets/img/004.webp'
 
 export default function LoupeRange() {
     return (

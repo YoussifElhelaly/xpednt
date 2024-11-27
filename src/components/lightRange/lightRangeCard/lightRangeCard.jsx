@@ -1,4 +1,4 @@
-import LightImg from '../../../assets/img/x001.png'
+import LightImg from '../../../assets/img/x001.webp'
 
 
 export default function LightRangeCard ({img , title}) {

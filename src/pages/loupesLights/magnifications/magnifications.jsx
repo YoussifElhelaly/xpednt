@@ -1,5 +1,5 @@
 import Header from "../../../components/Header/Header";
-import HeaderImg from '../../../assets/img/IMG_1385-1.jpg'
+import HeaderImg from '../../../assets/img/IMG_1385-1.webp'
 import LoupeRange from "../../../components/loupeRange/loupeRange";
 export default function MagnificationsPage() {
     return (
