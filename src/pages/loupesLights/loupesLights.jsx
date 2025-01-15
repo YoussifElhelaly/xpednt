@@ -6,7 +6,20 @@ import zye5rrj from '../../assets/img/004.webp'
 import oa3ixhy3 from '../../assets/img/004.webp'
 
 import video from '../../assets/loupe.mp4'
+import getLight from "../../features/getLights";
+import { useEffect, useState } from "react";
 export default function LoupesLights() {
+
+
+    const [data, setData]= useState([])
+
+    useEffect(()=>{
+        const fetchData = async ()=>{
+            setData(await getLight())
+        }
+        fetchData()
+    },[])
+
     return (
         <>
             <Header headerImg={headerImg}>
@@ -15,7 +28,7 @@ export default function LoupesLights() {
                     Loupes &amp; Lights
                 </h1>
                 <div class="header__text col--md-7 col--lg-6">
-                    <p>With five design awards, we are proud to offer the most customisable loupes on the market. They will fit any prescription when needed. You will experience incredible detail with maximum sharpness to gain the precision you are looking for, while working optimal ergonomically. Without compromises!</p>
+                    <p>Experience unmatched clarity and precision with our premium loupes and lights, meticulously crafted to enhance your vision and focus during procedures. Combining ergonomic design with advanced technology, our solutions ensure comfort, durability, and optimal performance for dental and medical professionals alike. Illuminate your expertise with Xpedent.</p>
                 </div>
             </div>
             </Header>
@@ -28,7 +41,7 @@ export default function LoupesLights() {
                                 <h2 class="h1">Loupes</h2>
 
                                 <div class="rich-text">
-                                    <p>Explore our finest, custom-crafted Danish loupes. ExamVision TTL loupes use the highest quality components available, handcrafted to your exact specifications. From 2.3x to 6.4x magnifications available.</p>
+                                <p>Xpedent loupes are designed to deliver precision, clarity, and comfort for dental and medical professionals. Crafted with advanced optics, they provide crystal-clear magnification to enhance accuracy and reduce eye strain. Our ergonomic designs prioritise posture and minimise fatigue, ensuring all-day comfort during procedures. Lightweight yet durable, Xpedent loupes are customisable to fit your unique needs, making them the perfect tool for enhancing performance and protecting your health. Experience innovation and reliability with Xpedent loupes, where quality meets functionality.</p>
                                 </div>
 
                                 <a class="btn btn--link " href="/loupes-lights/loupes/" title="Explore our loupes" rel="noreferrer">
@@ -36,7 +49,7 @@ export default function LoupesLights() {
                                 </a>
                         </header>
                         <div class="col col--sm-6 col--md-7">
-                            <video src={video} autoPlay muted loop></video>
+                            <video className="videoLight" src={video} autoPlay muted loop></video>
                         </div>
                         {/* <div class="col col--sm-6 col--md-7">
                                 <img class="lazy margin-auto lazy--loaded" src={tmrnt24s} alt="Dental loupes for dentists and hygienists Galilean HD in Icon frame v2, raw colour"/>
@@ -44,7 +57,7 @@ export default function LoupesLights() {
                     </div>
                 </div>
             </section>
-            <section id="module2" class="section image-text ">
+            {/* <section id="module2" class="section image-text ">
 
                 <div class="grid-wrap">
                     <div class="grid-row grid-row--align-center">
@@ -75,7 +88,7 @@ export default function LoupesLights() {
                                 <h2 class="h1">Magnification</h2>
 
                                 <div class="rich-text">
-                                    <p>ExamVision offers you a wide range of magnifications available in five loupe systems: <span class="NormalTextRun SCXW11781812 BCX0">Galilean Essential, Galilean HD, Kepler Kompakt</span><span class="NormalTextRun SCXW11781812 BCX0">, Kepler Reflekt</span><span class="NormalTextRun SCXW11781812 BCX0"> and Kepler Advanced.</span>&nbsp;</p>
+                                    <p>Xpedent offers you a wide range of magnifications available in five loupe systems: <span class="NormalTextRun SCXW11781812 BCX0">Galilean Essential, Galilean HD, Kepler Kompakt</span><span class="NormalTextRun SCXW11781812 BCX0">, Kepler Reflekt</span><span class="NormalTextRun SCXW11781812 BCX0"> and Kepler Advanced.</span>&nbsp;</p>
                                 </div>
 
                 <a class="btn btn--link " href="/loupes-lights/magnifications/" title="Explore our Magnifications" rel="noreferrer">
@@ -87,51 +100,56 @@ export default function LoupesLights() {
                         </div>
                     </div>
                 </div>
-            </section>
-            <section id="module4" class="section image-text ">
+            </section> */}
+            {
+                    data.map((ergo , index)=>{
+                       
+                        return(
+                            <>
+                            {
+                                index % 2 == 0 ?
+                                <div class="grid-wrap">
+                                <div class="grid-row product-features__item">
+                                    <div class="col col--no-pad product-features__image-wrap col--md-8">
+                                        <div class="product-features__image">
+                                            <img src={ergo.image} alt="Working distance"/>
 
-                <div class="grid-wrap">
-                    <div class="grid-row grid-row--align-center">
-                        <header class="col col--sm-6 col--md-5 section__header">
 
-                                <h2 class="h1">Optics &amp; Safety</h2>
-
-                                <div class="rich-text">
-                                    <p>ExamVision top quality optics - and specialist advice. ExamVision specialises in optics and optical solutions. We recognise the needs of the individual user and our aim is to improve your vision and ergonomic posture by finding the perfect solution for you.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col col--md-4 product-features__content">
+                                            <div>
+                                                <h3 data-count="1">{ergo.title}</h3>
+                                                <p>{ergo.description}</p>
+                                            </div>
+                                    </div>
                                 </div>
+                            </div>
+                                
+                                :
+                                <div class="grid-wrap">
+                                <div class="grid-row product-features__item product-features__item--right">
+                                    <div class="col col--no-pad product-features__image-wrap col col--md-8 product-features__image-wrap--right">
+                                        <div class="product-features__image product-features__image--right">
+                                            <img src={ergo.image} alt="Declination angle"/>
 
-                <a class="btn btn--link " href="/loupes-lights/optics-safety/" title="Explore ExamVision Optics &amp; safety" rel="noreferrer">
-                <span>Explore ExamVision Optics &amp; safety</span>
-                </a>
-                        </header>
-                        <div class="col col--sm-6 col--md-7">
-                                <img class="lazy margin-auto lazy--loaded" src={zye5rrj} alt="Smiling dentist wearing his loupes glasses Galilean HD in Icon frame v2 in black colour"/>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section id="module5" class="section image-text section--grey-extra-light-dusted">
 
-                <div class="grid-wrap">
-                    <div class="grid-row grid-row--align-center grid-row--reverse">
-                        <header class="col col--sm-6 col--md-5 section__header">
-
-                                <h2 class="h1">Frames</h2>
-
-                                <div class="rich-text">
-                                    <p>ExamVision frames are lightweight, made from high-end materials and most important, they offer an exceptional balance, are durable, stable and they won't deform.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col col--md-4 product-features__content product-features__content--right">
+                                            <div>
+                                                <h3 data-count="2">{ergo.title}</h3>
+                                                <p>{ergo.description} </p>
+                                            </div>
+                                    </div>
                                 </div>
+                            </div>
+                            }
+                            </>
 
-                <a class="btn btn--link " href="/loupes-lights/frames/" title="Explore our Frames" rel="noreferrer">
-                <span>Explore our Frames</span>
-                </a>
-                        </header>
-                        <div class="col col--sm-6 col--md-7">
-                                <img class="lazy margin-auto lazy--loaded" src={oa3ixhy3} alt="FRAME MIXED 01"/>
-                        </div>
-                    </div>
-                </div>
-            </section>
+                        )
+                    },[])
+                }
        
         </>
     )   

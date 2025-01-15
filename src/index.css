@@ -12,6 +12,10 @@
 .nav__topmenu__sub li a[title="Student"] + span.nav__topmenu__sub-image {
   background: url("./assets/img/IMG_1385-1.webp");
 }
+
+.videoLight {
+  width: 90%;
+}
 /* import dentalImg from '../../assets/img/IMG_1377-2.webp'
 import surgicalImg from '../../assets/img/IMG_0435.webp'
 import studentImg from '../../assets/img/IMG_1385-1.webp' */

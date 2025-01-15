@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import logo from '../../img/landing/logo.png'
 
 
@@ -12,46 +13,22 @@ export default function Footer () {
                 </a>
             </div>
                 <div class="col col--xs-6 col--sm-4 col--lg-2">
-                    <h4>xpedent ApS</h4>
+                    <h4>xpedent </h4>
                     <p>
-Industrivej 11<br />8305 Samsø<br />Denmark<br />CVR/VAT DK26174430                    </p>
-                        <ul class="list-style-none">
-                            <li><a href="tel:+45 87 92 12 10">+45 87 92 12 10</a></li>
-                            <li><a href="mailto:office@xpedent.com">office@xpedent.com</a></li>
+                    The Old Granary, <br /> East Street, <br /> West
+                    Chiltington, West Sussex
+                    </p>
+                    <ul class="list-style-none">
+                            <li><a href="tel:+44 7342 627178">+44 7342 627178</a></li>
+                            <li><a href="mailto:Info@xpedent.co.uk">Info@xpedent.co.uk</a></li>
                         </ul>
                 </div>
-                    <div class="col col--xs-6 col--sm-4 col--lg-2">
-                        <h4>Quick links</h4>
-
-                        <ul class="list-style-none">
-                                <li><a href="career/index.html">Career</a></li>
-                                <li><a href="contact/index.html">Contact</a></li>
-                                <li><a href="support/index.html">Support</a></li>
-                        </ul>
                     
-                    </div>
-                    <div class="col col--xs-6 col--sm-4 col--lg-2">
-                        <h4>Our Policies</h4>
-
-                        <ul class="list-style-none">
-                                <li><a href="privacy-policy/index.html">Privacy Policy</a></li>
-                                <li><a href="privacy-policy-for-xpedent-mobile-app/index.html">App Privacy Policy</a></li>
-                                <li><a href="javascript:CookieConsent.renew();">Cookie Policy</a></li>
-                                <li><a href="terms-of-use/index.html">Terms of Use</a></li>
-                        </ul>
-                    
-                    </div>
-                    <div class="col col--xs-6 col--sm-4 col--lg-2">
-                        <h4>xpedent Dealer</h4>
-
-                        <ul class="list-style-none">
-                                <li><a href="http://dealernet.xpedent.com/">Login to DealerNet</a></li>
-                                <li><a href="media/3rrdj3uq/2024-02-becoming-a-dealer-web.pdf" target="_blank">Become a Dealer</a></li>
-                        </ul>
-                    </div>                
+               
+                             
                 <div class="col col--xs-6 col--sm-4 col--lg-2 footer__social">
                     <div class="social-icons social-icons--white footer__social-icons">
-                        <a href="https://www.linkedin.com/company/xpedent-aps" target="_blank" class="social-icons__icon-wrap" rel="noreferrer">
+                        <a href="https://ae.linkedin.com/company/xpedent-uk-ltd" target="_blank" class="social-icons__icon-wrap" rel="noreferrer">
                             <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="35px" height="35px" viewBox="0 0 35 35">
                                 <title>LinkedIn</title>
                                 <path fill="#FFFFFF" d="M17.5,0C7.8,0,0,7.8,0,17.5S7.8,35,17.5,35S35,27.2,35,17.5S27.2,0,17.5,0z M14.2,24.4h-3v-9h3V24.4z
@@ -60,7 +37,7 @@ Industrivej 11<br />8305 Samsø<br />Denmark<br />CVR/VAT DK26174430            
                                     v1.3c0.5-1,1.6-1.5,2.7-1.5c0.9,0,1.8,0.3,2.5,1c0.7,0.9,1.1,2,1,3.1V24.4z" />
                             </svg>
                         </a>
-                        <a href="https://www.facebook.com/xpedentDK/" target="_blank" class="social-icons__icon-wrap" rel="noreferrer">
+                        <a href="https://www.facebook.com/p/Xpedent-100089379690151/" target="_blank" class="social-icons__icon-wrap" rel="noreferrer">
                             <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="35px" height="35px" viewBox="0 0 35 35">
                                 <title>Facebook</title>
                                 <path fill="#FFFFFF" d="M17.5,0C7.8,0,0,7.8,0,17.5S7.8,35,17.5,35S35,27.2,35,17.5S27.2,0,17.5,0z M21.8,12.5
@@ -69,7 +46,7 @@ Industrivej 11<br />8305 Samsø<br />Denmark<br />CVR/VAT DK26174430            
                                     c0-0.2,0-0.3,0-0.5c0.1-1.8,1.7-3.2,3.5-3.1h1.9c0.2,0,0.3,0.1,0.3,0.3V12.5z" />
                             </svg>
                         </a>
-                        <a href="https://www.youtube.com/@xpedentChannel" target="_blank" class="social-icons__icon-wrap" rel="noreferrer">
+                        <a href="https://www.youtube.com/channel/UCDnO-ILP4eUq54w_60SPzgQ" target="_blank" class="social-icons__icon-wrap" rel="noreferrer">
                             <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="35px" height="35px" viewBox="0 0 35 35">
                                 <title>YouTube</title>
                                 <path fill="#FFFFFF" d="M17.5,0C7.8,0,0,7.8,0,17.5S7.8,35,17.5,35S35,27.2,35,17.5S27.2,0,17.5,0z M26,17.6c0,1.3,0,2.5-0.3,3.8
@@ -78,7 +55,7 @@ Industrivej 11<br />8305 Samsø<br />Denmark<br />CVR/VAT DK26174430            
                                     C25.9,15,26,16.3,26,17.6L26,17.6z M21,17.4l-4,2L15.9,20v-5.3l0.5,0.3L21,17.4z" />
                             </svg>
                         </a>
-                        <a href="https://www.instagram.com/xpedent/" target="_blank" class="social-icons__icon-wrap" rel="noreferrer">
+                        <a href="https://www.instagram.com/xpedent_international/" target="_blank" class="social-icons__icon-wrap" rel="noreferrer">
                             <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="35px" height="35px" viewBox="0 0 35 35">
                                 <title>Instagram</title>
                             <path fill="#FFFFFF" d="M18,15.3c-1.5,0-2.7,1.2-2.7,2.7s1.2,2.7,2.7,2.7v0c1.5,0,2.7-1.2,2.7-2.7S19.5,15.3,18,15.3z M18,15.3
@@ -115,7 +92,10 @@ Industrivej 11<br />8305 Samsø<br />Denmark<br />CVR/VAT DK26174430            
                         </a>
                     </div>
                     <p>&copy; xpedent 2024</p>
-                </div>
+                    </div>
+                    <div class="col col--xs-6 col--sm-4 col--lg-5">
+                        <h4>Xpedent UK Ltd is registered in England number 06128867.  Registered Office: 88 Boundary Rd, Hove, East Sussex BN37GA.  VAT number GB912844819</h4>
+                    </div>
         </div>
     </div>
 </footer>

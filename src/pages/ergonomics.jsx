@@ -1,5 +1,5 @@
 import Header from "../components/Header/Header";
-import headerImg from '../assets/img/020.webp'
+import headerImg from '../assets/img/ergo.png'
 import { useEffect, useState } from "react";
 import getErgo from "../features/getErgo";
 export default function ErgonomicsPage() {
@@ -21,7 +21,7 @@ export default function ErgonomicsPage() {
                     Ergonomics
                 </h1>
                 <div class="header__text col--md-7 col--lg-6">
-                    <p>Good ergonomics are a crucial prerequisite for a long, enjoyable and healthy working life. Magnifying ergonomic loupes from ExamVision will help you achieve improved posture, physical wellbeing and allow you to perform at your best.</p>
+                    <p>Xpedent’s loupes are designed to reduce strain and enhance comfort, promoting natural posture and precision for prolonged procedures. Work smarter, not harder.</p>
                 </div>
             </div>
         </Header>
@@ -37,7 +37,7 @@ export default function ErgonomicsPage() {
                                 </div>
                 {
                     data.map((ergo , index)=>{
-                        console.log(ergo)
+                      
                         return(
                             <>
                             {

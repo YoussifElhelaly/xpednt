@@ -7,76 +7,80 @@ export default function MagnificationsPage() {
             <Header headerImg={HeaderImg}>
             <div>
             <h1 class="header__headline col--xl-7">
-                ExamVision<br/>Magnifications
+                Xpedent<br/>Magnifications
             </h1>
 
 
                 <div class="header__text col--md-7 col--lg-6">
-                    <p>ExamVision offers you a wide range of magnifications available in five loupe systems: Galilean Essential, Galilean HD, Kepler Kompakt, Kepler Reflekt and Kepler Advanced.</p>
+                    <p>Xpedent offers you a wide range of magnifications available in five loupe systems: Galilean Essential, Galilean HD, Kepler Kompakt, Kepler Reflekt and Kepler Advanced.</p>
                 </div>
 
 
         </div>
             </Header>
-            <section id="module1" class="section section--grey-extra-light-dusted">
-                <div class="grid-wrap grid-wrap--small">
-                        <header class="section__header">
-                            <h2>Designed meticulously to meet specific demands and needs</h2>
-                        </header>
-                        <div class="rich-text">
-                            <p>Why use loupes and magnification?</p>
-                            <p><strong>1. To enhance visual acuity and treatment quality<br/></strong>Although you might not use glasses or contact lenses with prescription, perfect vision during dental or medical proceedings is paramount. Perfectly fitted and personalised loupes with magnifications tailored to your specifications, provide you with:</p>
-                            <ul>
-                            <li>the crystal-clear vision and magnification you need for high-quality, precision work;</li>
-                            <li>greater work satisfaction, achieved through better treatment results, faster work, and happier, well-treated patients.</li>
-                            </ul>
-                            <p><strong>2. Magnification improves ergonomics and comfort<br/></strong>Magnifying loupes help improve your ergonomic work position significantly. Longer working distances are good for your body but place greater demands on your vision. Without magnification, many practitioners in dentistry, surgery and other focused professions will work in crouched, uncomfortable positions that lead to chronic pain in the lower back and neck. Magnifying ergonomic loupes solve this,&nbsp;while also achieving a safe distance between practitioner and patient&nbsp;as a&nbsp;personal protective measure. Loupes will help you achieve better posture and adding magnification to your work routine will allow you to perform professionally without compromising your own body, health,&nbsp;and work environment.</p>
-                        </div>
-                </div>
-            </section>
             <section id="module2" class="section ">
                     <div class="grid-wrap grid-wrap--small">
                         <header class="section__header">
-                            <h2>A wide range of 14 magnifications available in five loupe systems</h2>
+                            <h2>
+                            Magnifications – Elevating Precision in Dental Practice
+
+                                </h2>
                         </header>
                         <div class="rich-text">
-                            <p><strong>Five different loupe systems to suit your choice of magnification</strong></p>
-                            <p>ExamVision offers a range of five different loupe systems to suit our range of magnifications: Galilean Essential and Galilean HD are both based on <a href="#module4" data-anchor="#module4">Galilean lens system</a>; Kepler Kompakt, Kepler Reflekt and Kepler Advanced which are all based on <a href="#module5" data-anchor="#module5">Prismatic lens system.</a></p>
-                            <ul>
-                            <li><strong>Galilean Essential </strong>(2.5x &amp; 3.0x)<br/>Our Essential loupes are amongst the finest entry-level loupes in the world, for all-day comfort and precision. Perfectly suited to students, hygienists and other professionals investing in magnification and loupes for the first time.<br/>Essential optics are a Galilean system, using more standard-quality materials than the high-end HD Galilean (such as Bioplast ocular housing instead of titanium). The Essential loupe range offers excellent magnification at an affordable price.</li>
-                            </ul>
-                            <ul>
-                            <li><strong>Galilean HD</strong> (2.3x, 2.8x, 3.3x, 3.8x)<br/>Excellent vision and precision with wide depth of field and a crisp image. With titanium housings this is the lightest possible loupe and suitable for all day wear - ideal for basic to intermediate procedures. The HD oculars are upgraded to reduce internal reflections and all lenses have anti-reflective and superior scratch-resistant coatings.</li>
-                            </ul>
-                            <ul>
-                            <li><strong>Kepler Kompakt</strong> (3.5x, 4.6x, 5.7x)<strong><br/></strong>Crystal-clear image from edge to edge and a wide field of view giving you ultimate precision, when performing the most demanding procedures. A lightweight, ultra-compact design combined with perfect vision.<br/><br/></li>
-                            <li><strong>Kepler Reflekt</strong> (4.0x)<br/>Unmatched peripheral vision and steep angulation. Ultra-lightweight materials and crystal-clear optics intended for prolonged use and high precision work.</li>
-                            </ul>
-                            <ul>
-                            <li><strong>Kepler Advanced</strong> (4 in 1: 3.6x, 4.5x, 5.5x, 6.4x)<br/>Feel mastery, wear power. Get the perfect magnification level for all your procedures with only one loupe. The world's lightest adjustable loupe and the only loupe with 4 magnifications, for unrivalled versatility.</li>
-                            </ul>
-                            <p><strong>PLEASE NOTE:</strong> It is very important not to select a magnification for your loupes that is higher than you need as you will be compromising your ergonomics and comfort. Ideally, anyone using more advanced loupes has a set of Galilean as well as Kepler with different magnifications and switches between them throughout the day depending on the task at hand.</p>
+                            <p>
+                            At Xpedent, we believe that the cornerstone of exceptional dentistry lies in precision. Our range of magnification solutions is meticulously designed to enhance clarity and improve posture, allowing dental professionals to work with unparalleled accuracy and comfort. Crafted using cutting-edge technology and premium materials, our loupes cater to a variety of needs and preferences.
+
+                            </p>
+                            <p>
+
+                            1.⁠ ⁠Galilean Loupes – Where Simplicity Meets Performance
+                            Perfect for dentists who demand functionality without compromise, our Galilean loupes deliver outstanding optical clarity and a wide field of view. Designed with lightweight materials and ergonomic frames, they are ideal for prolonged use, ensuring minimal strain on your eyes and neck. Whether you’re performing routine procedures or intricate restorations, Galilean loupes offer reliable magnification and effortless focus.
+                            </p>
+                            <p>
+                            2.⁠ ⁠Ergo Loupes – Redefining Ergonomics
+                            Our Ergo loupes are the pinnacle of ergonomic innovation. Featuring a customised tilt angle, they promote optimal posture, helping to reduce fatigue and the risk of musculoskeletal issues. Built with premium Schott Glass and an Achromatic Optical Path Design, these loupes deliver crystal-clear visuals and true-to-life colour representation. Experience precision and comfort like never before with the Ergo range, designed for the modern dental professional.
+
+                            </p>
+                        
+                            <p>
+                            3.⁠ ⁠Slim Scope Loupes – Compact Design, Uncompromised Quality
+
+                            Engineered for those who prioritise lightweight design, our Slim Scope loupes combine minimalistic aesthetics with superior optical performance. These ultra-lightweight loupes are perfect for extended procedures, offering enhanced comfort without sacrificing clarity. Compact yet powerful, Slim Scope loupes are an excellent choice for dental professionals seeking a sleek, modern solution.
+
+                            </p>
+
+
+
+
+
                         </div>
                     </div>
             </section>
             <section id="module3" class="section ">
-    <div class="grid-wrap grid-wrap--small">
-        <header class="section__header">
-            <h2>Two different lens systems for perfect loupe magnification</h2>
-        </header>
-        <div class="rich-text">
-            <p>The examples below represent a linear magnification, based on a working distance of 45 cm.</p>
-<p><strong>Galilean Lens System</strong></p>
-<p>Galilean lens systems are small and lightweight and produce a bright image. This system allows for optimal light transmission so it is possible to use without additional LED. However adding a loupe light will give you the best results, adding precision and improving vision. You can read more about our <a href="/loupes-lights/lights/" title="Oświetlenie">loupes light range here</a>.<br/>The magnifications in our Galilean range provide the user with a larger range of movement and depth of field than the higher magnifications of the Kepler system.<br/>In general terms the Galilean lenses are ideal for entry-level, all-day wear and general procedures and diagnostics.</p>
-<p>See a printable overview <a rel="noopener" href="/media/1nofj3pu/examvision-galilean-magnifications-july-2023.pdf" target="_blank" title="Examvision Galilean Magnifications 2023">here</a> or jump to <a href="#module4" data-anchor="#module4">magnifications</a>.</p>
-<p><strong>Kepler Lens System</strong></p>
-<p>Kepler lenses allow for stronger magnification and an edge-to-edge sharp image thanks to the use of our lightweight prisms. ExamVision uses the best ultra-lightweight materials in our Kepler systems to make them some of the shortest and lightest Kepler loupes on the market. And the Fine-Focus feature on each ocular allows you to achieve the clearest and best binocular magnification with the best depth of field.<br/>The high magnification and use of prisms affects the amount of light transmitted through the system - we therefore always advise our users to pair these loupes with a&nbsp;<a href="/loupes-lights/lights/" title="Oświetlenie"><u>LED-light</u></a>.<br/>Our Kepler lenses are ideal for special procedures where near-microscopic magnification is needed.</p>
-<p>See a printable overview for <a href="/media/z0ic2edk/examvision-kepler-ka-kk-magnifications-2024.pdf" title="Examvision Kepler Magnifications 2024">Kepler Kompakt &amp; Kepler Advanced</a> and for <a href="/media/kp1ny2jl/examvision-kepler-reflekt-magnifications-2024.pdf" title="Examvision Kepler Reflekt Magnifications 2024">Kepler Reflekt</a> or jump to<a href="#module5" data-anchor="#module5"> magnifications</a>.</p>
-        </div>
+                <div class="grid-wrap grid-wrap--small">
+                    <header class="section__header">
+                        <h2>Why Choose Xpedent Loupes?</h2>
+                    </header>
+                    <div class="rich-text">
+                        <ul>
+                            <li>Exceptional Optics: Achromatic lenses ensure sharp, distortion-free images.
+                            </li>
+                            <li>Customisable Options: Tailored to fit your specific working distance and preferences.
+                            </li>
+                            <li>Durable Frames: Crafted from ultra-light alloys for durability and comfort.
+                            </li>
+                            <li>Enhanced Precision: Improve diagnosis and procedural accuracy with superior magnification.
+                            </li>
+                        </ul>
+        
+        <p>Elevate your practice with Xpedent’s magnification solutions and see the difference precision makes. Explore our range of loupes today and discover the perfect tool to meet your needs.
+
+For enquiries or to request a demonstration, please contact us via our website or your local Xpedent representative.</p>
+                     </div>
 
     </div>
             </section>
-            <section id="module4" class="section section--grey-light">
+            {/* <section id="module4" class="section section--grey-light">
                 <div class="grid-wrap grid-wrap--small">
                     <header class="section__header">
                         <h2>Galilean Lens System</h2>
@@ -516,7 +520,7 @@ export default function MagnificationsPage() {
                                 </div>
                             </div>
                 </div>
-            </section>
+            </section> */}
             <LoupeRange/>
         </>
     )

@@ -2,7 +2,10 @@ import { atom } from "recoil";
 
 const selectLightAtom = atom({
     key:"selectLightAtom",
-    default: 0
+    default: {
+        id:0,
+        name :""
+    }
 })
 
 export default selectLightAtom

@@ -8,12 +8,22 @@ import { RecoilRoot } from 'recoil';
 import './css/jcl.min56a5.css'
 import './css/main.min8459.css'
 import 'swiper/css/pagination';
+import ScrollToTop from './components/scrollTop';
+import { Elements } from '@stripe/react-stripe-js';
+import { loadStripe } from '@stripe/stripe-js';
 const root = ReactDOM.createRoot(document.getElementById('root'));
+const stripePromise = loadStripe('pk_test_51Oqxd5B37QGPmlGBfBH8cZU2Oj5qJb8yypb5wC9PDDibIRXuoIsO550gkMI93bvhjl5oLcBHRgisukMAtQgxJHLL00yx6cUkWv');
+
 root.render(
 
     <BrowserRouter>
       <RecoilRoot>
-        <App />
+        <ScrollToTop>
+        <Elements stripe={stripePromise}>
+
+          <App />
+        </Elements>
+        </ScrollToTop>
       </RecoilRoot>  
     </BrowserRouter>
 

@@ -10474,7 +10474,19 @@ html {
     position: relative
 }
 .ex-main.CustomeYourLoupe {
-    min-height: calc(100vh - 64px);
+    /* min-height: calc(100vh - 64px); */
+}
+
+.nav.models {
+    box-shadow: none;
+    color: white;
+    background-color: black;
+    position: static;
+    
+}
+
+.nav.models .nav__logo {
+    box-shadow: none;
 }
 
 .ex-configurator-back-button {
@@ -11307,7 +11319,8 @@ select.input-text {
 .conf-modal-content .form-group {
     margin-bottom: 14px;
     position: relative;
-    min-width: 550px;
+    max-width: 550px;
+    width: 100%;
 }
 
 .conf-modal-content .form-group::before {

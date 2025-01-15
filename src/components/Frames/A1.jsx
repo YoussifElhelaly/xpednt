@@ -20,7 +20,7 @@ export function A1(props) {
 
   useEffect(() => {
     gltf.scene.traverse((child) => {
-      console.log(child.name)
+    
       if (child.name == "???-??1001" && child.isMesh) {
         child.material.color = new THREE.Color(armColor); // Change color to red
         child.material.needsUpdate = true;

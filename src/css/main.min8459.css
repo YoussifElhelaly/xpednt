@@ -1580,7 +1580,8 @@ nav li,nav ul {
     position: absolute;
     bottom: 22px;
     left: 0;
-    padding-left: 35px;
+    padding: 10px;
+    box-sizing: border-box;
     width: 100%;
     max-width: 550px;
     text-shadow: 0 1px 3px rgba(0,0,0,.5);
@@ -1590,12 +1591,14 @@ nav li,nav ul {
 
 .case__subtitle {
     text-transform: uppercase;
-    font-weight: 400
+    font-weight: 400;
+    font-size: 20px;
 }
 
 .case__headline {
     margin-top: 5px;
-    color: inherit
+    color: inherit;
+    font-size: 14px !important;
 }
 
 .case__text {
@@ -1939,7 +1942,7 @@ nav li,nav ul {
     bottom: 40px;
     right: 35px;
     text-align: right;
-    overflow: hidden
+
 }
 
 .gateway__text .link--strip,.gateway__text b {
@@ -3257,8 +3260,16 @@ img.lazy:not(.lazy--loaded)+.icon--play {
 .product-features__image {
     position: relative;
     display: inline-block;
-    max-width: 100%;
-    transform: translateX(0)
+    width: 100%;
+    transform: translateX(0);
+    height: 580px;
+}
+
+.product-features__image img {
+    object-fit: cover;
+    object-position: center;
+    height: 100%;
+    width: 100%;
 }
 
 .product-features__image--right {
@@ -3849,6 +3860,17 @@ img.lazy.margin-auto.lazy--loaded {
     }
 }
 
+
+.gateway__bg::before {
+    content: "";
+    position: absolute;
+    height: 200px;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    background-image:linear-gradient(to top , #000 0%, #00000000 100%) ;
+}
+
 @media (min-width: 768px) {
     .grid-wrap {
         padding:0 50px
@@ -3984,7 +4006,7 @@ img.lazy.margin-auto.lazy--loaded {
     }
 
     .case__content {
-        padding-left: 45px
+      
     }
 
     .filter__tabs {
@@ -4067,15 +4089,7 @@ img.lazy.margin-auto.lazy--loaded {
         margin: 0 10px
     }
 
-    .gateway__bg::before {
-        content: "";
-        position: absolute;
-        height: 200px;
-        width: 100%;
-        left: 0;
-        bottom: 0;
-        background-image:linear-gradient(to top , #000 0%, #00000000 100%) ;
-    }
+   
 
     .header--has-aside .header__media {
         bottom: 160px
@@ -4581,7 +4595,7 @@ img.lazy.margin-auto.lazy--loaded {
     }
 
     .case__content {
-        padding-left: 52px
+      
     }
 
     .grid-row+.filter__item-list {

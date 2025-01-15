@@ -14,6 +14,9 @@ body ,
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
 
 .App-header {
   background-color: #282c34;
@@ -49,4 +52,60 @@ p {
   to {
     transform: rotate(360deg);
   }
+}
+
+.countries {
+  background-color: #f4f4f5;
+  width: 40px;
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  color: black;
+
+  padding: 5px;
+  z-index: 55;
+}
+
+.countries .activeCountry { 
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.countries input {
+  max-width: 550px;
+  width: 100%;
+}
+
+.input-phone.input-email  {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.input-phone.input-email input {
+  width: 70%;
+}
+
+.countries ul {
+  position: absolute;
+  background-color: white;
+  height: 150px; 
+  width: 300px;
+  overflow: auto;
+  color: black;
+  z-index: 99;
+  visibility: hidden;
+  top: 100%;
+}
+
+.countries ul.active {
+  visibility: visible;
+}
+
+.countries ul li {
+  display: flex;
+  gap: 5px;
+  cursor: pointer;
+  align-items: center;
 }

@@ -3,10 +3,16 @@ import headerImg from '../assets/img/00.webp'
 import Header from "../components/Header/Header"
 import Certf from "../components/certifcate/certf"
 import TestmonilsSlider from "../components/testmonilsSlider/testmonilsSlider"
+import { useRecoilValue } from "recoil"
+import modelsPriceAtom from "../atoms/allModels"
+import Calc from "../utlities/subTotal"
 
 export default function HomePage() {
+    const modelsPrice = useRecoilValue(modelsPriceAtom)
 
 
+
+    
     return(
         <>
         <Header headerImg={headerImg}>

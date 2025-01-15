@@ -1,11 +1,31 @@
 import Header from "../components/Header/Header";
 import headerImg from '../assets/img/IMG_1102.webp'
 import createContact from "../features/createContact";
+import {
+    defaultCountries,
+    FlagImage,
+    parseCountry,
+    usePhoneInput,
+  } from 'react-international-phone';
+import { useState } from "react";
 export default function ContactUs() {
 
+    
+    const { inputValue, handlePhoneValueChange, inputRef, country, setCountry } =
+    usePhoneInput({
+        defaultCountry: 'gb',
+        value:"",
+        countries: defaultCountries,
+        onChange: (data) => {
+            
+        },
+    });
     async function handleSubmmit(e) {
-        createContact(e)
+
+        createContact(e , country)
     }
+
+    const [isActive , setIsActive] = useState(false)
 
     return(
         <>
@@ -31,8 +51,40 @@ export default function ContactUs() {
                 <div class="form-group input-name">
                     <input type="text" name="job" class="input-text" placeholder="job" required/>
                 </div>
+                <div class="form-group input-email input-phone">
+                    <div className="countries" onClick={()=>{
+                        setIsActive(!isActive)
+                    }}>
+                        <div className="activeCountry">
+                            <FlagImage
+                                        iso2={country.iso2}
+                                        style={{ marginRight: '8px' }}
+                                        />
+                            <span>+{country.dialCode}</span>
+                        </div>
+                                <ul className={`${isActive ? "active" : ""}`}>
+                    
+                                {defaultCountries.map((c)=>{
+                                        const country = parseCountry(c);
+                                        return (
+                                            <li onClick={()=>{
+                                                setCountry(country.iso2)
+                                            }}>
+                                            
+                                                <FlagImage
+                                                iso2={country.iso2}
+                                                style={{ marginRight: '8px' , width:"40px" }}
+                                                />
+                                                <span>+{country.dialCode}</span>
+                                            </li>
+                                        )
+                                })}
+                            </ul>
+                    </div>
+                    <input type="tel" name="phone" required  class="input-text"/>
+                </div>
                 <div class="form-group input-message">
-                    <input type="text" name="note" class="input-text" placeholder="Note" required/>
+                    <input type="text" name="note" class="input-text" placeholder="Note" defaultValue={""}/>
                 </div>
                 <div class="form-group">
                         <button type="submit" class="g-recaptcha form-submit-btn">Send</button>

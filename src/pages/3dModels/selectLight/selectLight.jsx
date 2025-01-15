@@ -4,11 +4,11 @@ import selectLightAtom from '../../../atoms/selectLight'
 export default function SelectLightStep() {
     const [selectLight, setSelectLight] = useRecoilState(selectLightAtom)
    
-  function handleSelectLight(light) {
-    if(light == selectLight) {
-      setSelectLight(0)
+  function handleSelectLight(light, name) {
+    if(light == selectLight.id) {
+      setSelectLight({id:0,name:""})
     } else {
-      setSelectLight(light)
+      setSelectLight({id : light , name})
     }
   }
     return (
@@ -18,10 +18,10 @@ export default function SelectLightStep() {
         <div id="a-change-lights" class="ex-configurator-step-options grid">
            
                     <div id="a_lights_total" onClick={()=>{
-                        handleSelectLight(1)
+                        handleSelectLight(1 , "Dragon FLy")
                     }} class={`ex-option-control-1 v2 ${selectLight == 1 && "active"}` } data-group="lights">
                         <img src={dragonFly} />
-                        <span>Total</span>
+                        <span>Dragon FLy</span>
                     </div>
                  
 

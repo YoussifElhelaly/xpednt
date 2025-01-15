@@ -20,7 +20,7 @@ export function Light3d4() {
         const loupeColor = useRecoilValue(loupeColorAtom)
  useEffect(() => {
     gltf.scene.traverse((child) => {
-      console.log(child.name )
+    
       if (child.name == "柱体078" && child.isMesh) {
         child.material.color = new THREE.Color(loupeColor); // Change color to red
         child.material.needsUpdate = true;
@@ -34,7 +34,7 @@ export function Light3d4() {
   }, [gltf,loupeColor]);
   return (
     <>
-      <primitive object={gltf.scene} position={[0.0, 0.015, handleYAxis(frame)]} rotation={[ 0,Math.PI / 2, 0]}/>
+      <primitive object={gltf.scene} position={[0.0, 0.015, handleYAxis(frame.id)]} rotation={[ 0,Math.PI / 2, 0]}/>
     </>
   
   )

@@ -6,17 +6,20 @@ import ProfessionLayout from "../professionLayout"
 export default function ProfessionDetails() {
 
     const [data,setData] = useState({})
+    const [details , setDetails] = useState({})
     const {proffId} = useParams()
     useEffect(()=>{
         const fetchData = async()=>{
-            setData(await getProfDetails(proffId))
+            let res = await getProfDetails(proffId)
+            setData(res)
+            setDetails(Object.assign({}, res.details))
         }
         fetchData()
     },[proffId])
-    console.log(data.title)
+
 
     return (
-        <ProfessionLayout proff={data}>
+        <ProfessionLayout proff={data} details={details}>
             {
                 data?.details?.map((proff)=>{
                     return(

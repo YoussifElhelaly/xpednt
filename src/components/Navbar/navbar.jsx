@@ -3,10 +3,18 @@ import { Link } from "react-router-dom";
 // import headerImg from '../../assets/media/b2jjln5g/2024-01-loupes-lights-page-header.jpg'
 import logo from '../../assets/img/logo.png'
 import PDImg from '../../assets/img/00.webp'
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
+import getProfession from "../../features/getProfession";
 
 export default function Navbar() {
+    const [data , setData] = useState([])
 
+    useEffect(()=>{
+        const fetchData =async ()=>{
+            setData(await getProfession())
+        }
+        fetchData()
+    },[])
     const navRef = useRef() 
 
     function handleCloseNav() {
@@ -73,9 +81,15 @@ export default function Navbar() {
 
                         <ul data-bg="media/mezjrlwy/profession-panto-sport-v2-header9769.jpg?crop=0,0.14791666666666667,0,0.10208333333333333&amp;cropmode=percentage&amp;width=1920&amp;height=1080&amp;quality=76&amp;rnd=132467135091100000">
                             <li><Link to="/profession/" title="Profession">Profession</Link></li>
-                                <li><Link to="/profession/dental" title="Dental">Dental</Link></li>
-                                <li><Link to="/profession/surgical" title="Surgical">Surgical</Link></li>
-                                <li><Link to="/profession/student" title="Student">Student</Link></li>
+                            
+                            {
+                                data.map((ele)=>{   
+                                    <li><Link to={`/profession/${ele.id}`} title="Dental">{ele.title}</Link></li>
+                                    
+                                }
+                                )
+                            }
+                                
                         </ul>
                     </div>
                 </li>
@@ -126,9 +140,19 @@ export default function Navbar() {
                             <li>
                                 <Link to="/profession" title="Profession">Profession</Link>
                                     <ul class="nav__topmenu__sub">
-                                            <li><Link to="/profession/dental" title="Dental">Dental</Link> <span class="nav__topmenu__sub-image" style={{backgroundImage : `${PDImg})`}}></span></li>
-                                            <li><Link to="/profession/surgical" title="Surgical">Surgical</Link> <span class="nav__topmenu__sub-image" ></span></li>
-                                            <li><Link to="/profession/student" title="Student">Student</Link> <span class="nav__topmenu__sub-image" ></span></li>                     
+                                    {
+                                        data.map((ele)=>{   
+                                            return (
+                                                <li>
+                                                    <Link to={`/profession/${ele.id}`} title="Dental">{ele.title}</Link> 
+                                                    <span class="nav__topmenu__sub-image" style={{backgroundImage:`url(${ele.image})`}}></span>
+                                                </li>
+                                            )
+                                            
+                                        }
+                                        )
+                                    }
+                                                                
                                     </ul>
                             </li>
                             <li>

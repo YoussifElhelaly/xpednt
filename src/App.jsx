@@ -21,16 +21,20 @@ import CustomeYourLoupe from './pages/3dModels/CustomeLoupe';
 import 'swiper/css/navigation';
 import ProfessionDetails from './pages/profession/details/professionDetails';
 import { Toaster } from 'sonner';
+import Navbar3d from './components/Navbar/navbar3d';
+import OrderCarbonX from './pages/orderCarbon';
 
 function App() {
   let location = useLocation()
-  console.log(location)
+
   return (
     <>
        <Toaster position="top-right" richColors/>
     {
-      location.pathname != "/CustomeYourLoupe" &&
+      location.pathname != "/CustomeYourLoupe" ?
         <Navbar />
+        :
+        <Navbar3d/>
     }
   <Routes>
     <Route element={<HomePage/>} path='/' />
@@ -53,6 +57,8 @@ function App() {
     <Route element={<LightsPage/>} path='/loupes-lights/lights' />
     <Route element={<AccessoriesPage/>} path='/loupes-lights/accessories' />
     <Route element={<CustomeYourLoupe/>} path='/CustomeYourLoupe' />
+
+    <Route element={<OrderCarbonX/>} path='/orderCarbonX' />
   </Routes>
   {/* <TrySection/> */}
   {

@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 
 export default function ProfessionalCard({img , title ,proff}) {
+
     return (
         <Link to={`/profession/${proff?.id}`} class="gateway__link">
             <div class="gateway__bg lazy" style={{backgroundImage:`url(${proff?.image})`}}>

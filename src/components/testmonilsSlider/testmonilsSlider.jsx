@@ -49,7 +49,7 @@ export default function TestmonilsSlider() {
                 >
                     {
                         data.map((testi)=>{
-                            console.log(testi)
+                      
                             return(
                                 <SwiperSlide>
                                     <div class="col case" data-filter-value="Dental-prof, Loupes-prod, Lights-prod, Denmark">

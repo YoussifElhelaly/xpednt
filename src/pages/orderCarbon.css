@@ -1,0 +1,155 @@
+.orderCarbonX  {
+    background-color: #ebeff0;
+    padding: 150px 0;
+    background-image: url("../assets/img/WhatsApp Image 2024-12-25 at 04.17.47.jpeg") ;
+    position: relative;
+    z-index: 1;
+    background-repeat: no-repeat;
+    background-size: contain;
+    color: white;
+}
+
+.orderCarbonX::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%);
+    z-index: 0;
+}
+
+.orderCarbonX .options {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+
+.orderCarbonX .options .price p.note {
+    font-size: 18px;
+    text-align: center;
+    color: white;
+}
+
+.orderCarbonX .options .price p{
+    font-size: 30px;
+    font-weight: bolder;
+    color: white;
+}
+
+.orderCarbonX  .ex-configurator-step-button {
+    color: white;
+}
+
+
+.orderCarbonX .options .ex-configurator-step-button.active {
+    background-color: black;
+    color: white;
+}
+
+.orderCarbonX .options .optionsLoupe .ex-configurator-step-button {
+    width: 25%;
+    padding: 5px;
+}
+
+.formStripe {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 350px;
+    color: black;
+}
+
+.formStripe .paymentButton {
+    
+}
+
+.formStripe .countryCity {
+    display: flex;
+    gap: 5px;
+}
+
+.formStripe .inputStripe , .formStripe select{
+    padding: 12px 10px !important;
+    margin: 10px 0;
+    background-color: white;
+    border: 1px solid transparent;
+    transition: 0.3s;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.formStripe .inputStripe:invalid,
+.formStripe select:invalid {
+    border-color:  red;
+}
+
+.formStripe .inputStripe:valid,
+.formStripe select:valid {
+    border-color: green;
+} 
+
+.formStripe iframe {
+    background-color: white;
+}
+
+
+.formStripe .CardField {
+    
+}
+
+.CardField.is-link-hidden.previous-link-hidden.CardField--ltr {
+    display: flex;
+    align-items: center;
+}
+
+.paymentPill{
+    padding-right: 100px;
+    display: flex;
+    gap: 20px;
+    justify-content: end;
+    align-items: center;
+    position: relative;
+}
+
+.paymentPill .pill h2{
+    color: white !important;
+    font-weight: bolder;
+    font-size: 24px;
+}
+
+.paymentPill ul {
+    list-style: none;
+    font-size: 16px;
+}
+
+.paymentButton {
+    background-color: #61c0d1;
+    color: white;
+    padding: 10px;
+}
+
+.paymentPill form label {
+    color: white;
+}
+
+.inputStripe.input-phone{
+    border: 1px solid black;
+}
+
+.inputStripe.input-phone .countries {
+    background-color: white;
+}
+
+@media (max-width:900px) {
+    
+    .orderCarbonX .paymentPill {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: unset;
+    }
+    .orderCarbonX {
+        background-image: unset;
+
+    }
+}

@@ -27,6 +27,7 @@ import StripeForm from "../../components/stripe/stripeForm";
 import axios from "axios";
 import { Light3d5 } from "../../components/Loups3d/light5";
 import { Light3d6 } from "../../components/Loups3d/light6";
+import { Light3d7 } from "../../components/Loups3d/light7";
 export default function CustomeYourLoupe () {
     const { steps, currentStepIndex , goTo, step, isFirstStep, isLastStep, back, next } =
     useMultistepForm([
@@ -37,28 +38,18 @@ export default function CustomeYourLoupe () {
       <StripeForm/>
     ])
     
-    async function callStripe () {
-       let res = await axios.post("http://192.168.1.98/Lyrebird/dashbordXpedent/public/api/create-payment-intent" , {
-            "amount":"10000",
-            "currency" : "AED",
-            "customer_name" : "Amr Ayad",
-            "customer_email" : "amrayad454@gmail.com",
-            "payment_method" : "card"
-        })
-        console.log(res.data.data)
-        
-    }
+    
 
 
   const selectFrameValue = useRecoilValue(selectFrameAtom)
   const selectLightValue = useRecoilValue(selectLightAtom)
   const selectLoupeValue = useRecoilValue(selectLoupeAtom)
 
-    console.log(selectLightValue)
+
 
     const renderModel = () => {
-        console.log(selectFrameValue)
-        switch (selectFrameValue) {
+    
+        switch (selectFrameValue.id) {
           case 1:
             return <A1  />;
           case 2:
@@ -70,7 +61,7 @@ export default function CustomeYourLoupe () {
         }
       };
       const renderLoupe = () => {
-        switch (selectLoupeValue) {
+        switch (selectLoupeValue.id) {
           case 1:
             return <Light3d1  />;
           case 2:
@@ -83,13 +74,15 @@ export default function CustomeYourLoupe () {
             return <Light3d5 x={4}/>
             case 6 : 
             return <Light3d6 />;
+            case 7 : 
+            return <Light3d7 />;
             
           default:
             return null;
         }
       };
       const renderLight = () => {
-        switch (selectLightValue) {
+        switch (selectLightValue.id) {
           case 1:
             return <DragonFLy  />;
           default:
@@ -126,11 +119,7 @@ export default function CustomeYourLoupe () {
                         />
                         </Canvas>
                         </div>
-                        <div class="text-center ex-right">
-                            
-
-                            
-                            
+                        <div class="text-center ex-right">          
                                 
                             {step}
 
@@ -166,7 +155,7 @@ export default function CustomeYourLoupe () {
                             </div>
                             <div class="step-text">
                                 <h4 class="step-title">FRAME</h4>
-                                <p class="step-choice"><span id="step-list-item-frame-text">Panto</span> <span id="step-list-item-frame-color-text">Lunar Grey</span> <span id="step-list-item-frame-rubber-bands-color-text"></span> <span id="step-list-item-frame-decoration-text"></span></p>
+                                
                             </div>
                         </li>
                         <li id="step-list-item-tips" onClick={()=>{
@@ -176,8 +165,8 @@ export default function CustomeYourLoupe () {
                                 <span>2</span>
                             </div>
                             <div class="step-text">
-                                <h4 class="step-title">TEMPLE TIP COLOUR</h4>
-                                <p class="step-choice" id="step-list-item-tip-color-text">Black</p>
+                                <h4 class="step-title">TEMPLE COLOUR</h4>
+                             
                             </div>
                         </li>
                         <li id="step-list-item-loupe" onClick={()=>{
@@ -192,7 +181,7 @@ export default function CustomeYourLoupe () {
                             </div>
                         </li>
                         <li id="step-list-item-light"  onClick={()=>{
-                            goTo(4)
+                            goTo(3)
                         }} class={`step-list-item ${currentStepIndex >= 3 && "current"}`}>
                             <div class="step-icon">
                                 <span>4</span>
@@ -202,12 +191,14 @@ export default function CustomeYourLoupe () {
                                 <p class="step-choice" id="step-list-item-light-text"></p>
                             </div>
                         </li>
-                        <li id="step-list-item-form" class="step-list-item">
+                        <li id="step-list-item-form" onClick={()=>{
+                            goTo(4)
+                        }} class={`${currentStepIndex >= 4 && "current"} step-list-item`}>
                             <div class="step-icon">
                                 <span>5</span>
                             </div>
                             <div class="step-text">
-                                <h4 class="step-title">GET A QUOTE</h4>
+                                <h4 class="step-title">PAYMENT</h4>
                                 <p class="step-choice"></p>
                             </div>
                         </li>

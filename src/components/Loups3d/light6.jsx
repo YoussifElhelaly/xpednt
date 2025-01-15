@@ -12,6 +12,7 @@ import selectFrameAtom from '../../atoms/selectFrame';
 import handleYAxis from '../../utlities/handleYAxis';
 import * as THREE from 'three';
 import loupeColorAtom from '../../atoms/loupeColor';
+import handleYAxisSlim from '../../utlities/handleYAxisSlim';
 
 export function Light3d6() {
 
@@ -20,8 +21,8 @@ export function Light3d6() {
         const loupeColor = useRecoilValue(loupeColorAtom)
  useEffect(() => {
     gltf.scene.traverse((child) => {
-      console.log(child.name )
-      if (child.name == "柱体078" && child.isMesh) {
+  
+      if (child.name == "___--__6001" && child.isMesh || child.name == "___--__6002" && child.isMesh){
         child.material.color = new THREE.Color(loupeColor); // Change color to red
         child.material.needsUpdate = true;
       }
@@ -34,7 +35,7 @@ export function Light3d6() {
   }, [gltf,loupeColor]);
   return (
     <>
-      <primitive object={gltf.scene} position={[0.0, 0.015, handleYAxis(frame)]} rotation={[ 0,Math.PI / 2, 0]}/>
+      <primitive object={gltf.scene} position={[-0.035, 0.015, handleYAxisSlim(frame.id)]} rotation={[ 0,Math.PI / 90, 0]}/>
     </>
   
   )

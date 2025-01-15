@@ -35,13 +35,13 @@ export default function Professional() {
                 effect={'cards'}
                 grabCursor={true}
                 modules={[EffectCards]}
-                className="mySwiper"
+                className="mySwiper proff"
             >
                 {
                     data.map((proff)=>{
-                        console.log(proff)
+              
                         return (
-                            <SwiperSlide>
+                            <SwiperSlide className="proff">
                                         <ProfessionalCard proff={proff} img={studentImg} title={"Student"}/>
 
                             </SwiperSlide>

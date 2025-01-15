@@ -7,14 +7,18 @@ import React from 'react'
 import { useGLTF } from '@react-three/drei'
 import { useLoader } from '@react-three/fiber';
 import { GLTFLoader } from 'three/examples/jsm/Addons.js';
+import handleYAxisLight from '../../utlities/handleYAxisLight';
+import { useRecoilValue } from 'recoil';
+import selectFrameAtom from '../../atoms/selectFrame';
+import handleZAxisLight from '../../utlities/handleZAxisLight';
 
 export function DragonFLy() {
-
+const selectedFrame = useRecoilValue(selectFrameAtom)
   const gltf = useLoader(GLTFLoader, '/lights/dragonFly.glb');
 
   return (
     <>
-      <primitive object={gltf.scene} position={[0.0, 0.035, 0.061]} rotation={[ 0,0, 0]}/>
+      <primitive object={gltf.scene} position={[0.0, handleYAxisLight(selectedFrame.id), handleZAxisLight(selectedFrame.id)]} rotation={[ 0,0, 0]}/>
     </>
   
   )

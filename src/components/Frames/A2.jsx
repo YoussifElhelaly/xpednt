@@ -37,4 +37,4 @@ export default function A2(props) {
   )
 }
 
-useGLTF.preload('/frames/A1.glb')
+useGLTF.preload('/frames/A2.glb')

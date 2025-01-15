@@ -7,7 +7,7 @@ export default function SelectTipStep() {
     return (
              
         <div id="step_2" class="ex-configurator-step active">
-        <div class="ex-configurator-step-header"><h3>TEMPLE TIP COLOUR</h3></div>
+        <div class="ex-configurator-step-header"><h3>TEMPLE COLOUR</h3></div>
         <div id="a-change-tips-color" class="ex-configurator-step-options">
                    
         <div className="selectColor d-flex">

@@ -6,7 +6,7 @@ import './readyMade.css'
 export default function ReadyMade() {
     return(
         <>
-            <Header headerImg={headerImg}>
+            <Header headerImg={headerImg} order={true}>
                 <div>
                     <h1 class="header__headline col--xl-7">
                         CarbonX

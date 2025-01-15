@@ -1,6 +1,6 @@
-import CurveIcon from  '../../../assets/media/akvdjnbo/carbonv2_ico.jpg'
-import CarbonIcon from  '../../../assets/media/tdsp1cpe/fashion_ico.jpg'
-import MetroIcon from  '../../../assets/media/0zdhbfip/metro_ico.jpg'
+import CurveIcon from  '../../../assets/003.png'
+import CarbonIcon from  '../../../assets/002.png'
+import MetroIcon from  '../../../assets/001.png'
 import ColorPicker from '../../../components/colorPicker/colorPicker'
 import faceColorAtom from '../../../atoms/faceColor'
 import selectFrameAtom from '../../../atoms/selectFrame'
@@ -20,20 +20,29 @@ export default function SelectFrameStep() {
         
         <div id="a-change-models" class="ex-configurator-step-options">
                     <div id="a_models_fashion" onClick={()=>{
-                        setSelectFrame(1)
+                        setSelectFrame({
+                            id:1,
+                            name:"Albert"
+                        })
                     }} class="ex-option-control-1 " data-group="frame_model">
                         <img src={CurveIcon} />
-                        <span><span class="underline"><span class="underline-hide">Elvis</span></span></span>
+                        <span><span class="underline"><span class="underline-hide">Albert</span></span></span>
                     </div>
                     <div id="a_models_carbonV2" onClick={()=>{
-                        setSelectFrame(2)
+                        setSelectFrame({
+                            id:2,
+                            name:"Piccadilly"
+                        })
                     }} class="ex-option-control-1 " data-group="frame_model">
                         <img src={CarbonIcon} />
                         <span><span class="underline"><span class="underline-hide">Piccadilly </span></span></span>
                     </div>
                     
                     <div id="a_models_metro" onClick={()=>{
-                        setSelectFrame(3)
+                         setSelectFrame({
+                            id:3,
+                            name:"Holmes"
+                        })
                     }} class="ex-option-control-1 " data-group="frame_model">
                         <img src={MetroIcon} />
                         <span><span class="underline"><span class="underline-hide">Holmes</span></span></span>
