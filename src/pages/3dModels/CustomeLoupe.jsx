@@ -13,7 +13,6 @@ import A2 from "../../components/Frames/A2";
 import A3 from "../../components/Frames/A3";
 import selectFrameAtom from "../../atoms/selectFrame";
 import { useRecoilValue } from "recoil";
-
 import selectLightAtom from "../../atoms/selectLight";
 import { SlimScope6 } from "../../components/Lights3d/slimeScope3";
 import selectLoupeAtom from "../../atoms/selectLoup";

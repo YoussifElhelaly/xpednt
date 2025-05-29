@@ -16,6 +16,7 @@ import {
 import armColorAtom from '../../atoms/armColor';
 import loupeColorAtom from '../../atoms/loupeColor';
 import createPreOrder from '../../features/createPreOrder';
+import faceColorAtom from '../../atoms/faceColor';
 
 export default function StripePage() {
   const [isActive , setIsActive] = useState(false)
@@ -34,14 +35,23 @@ export default function StripePage() {
     const [region, setRegion] = useState('');
     const email = useRef()
     const selectFrameValue = useRecoilValue(selectFrameAtom)
-    const selectLightValue = useRecoilValue(selectLightAtom)
     const selectLoupeValue = useRecoilValue(selectLoupeAtom)
+    const selectLightValue = useRecoilValue(selectLightAtom)
+  const armColorValue = useRecoilValue(armColorAtom)
+    const loupeColorValue = useRecoilValue(loupeColorAtom)
     const prices = useRecoilValue(modelsPriceAtom)
 
-    let sumTotal = CalcPrice(selectFrameValue.name , prices) + CalcPrice(selectLightValue.name , prices) + CalcPrice(selectLoupeValue.name , prices)
-        const handleSubmit = async (event) => {
-          event.preventDefault();
-          createPreOrder(event)
+    // let sumTotal = CalcPrice(selectFrameValue.name , prices) + CalcPrice(selectLightValue.name , prices) + CalcPrice(selectLoupeValue.name , prices)
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    console.log(selectLightValue.name)
+          createPreOrder(event, {
+            frameName: selectFrameValue.name,
+            loupeName: selectLoupeValue.name || 0,
+            lightName: selectLightValue.name || 0 ,
+            frameColor: armColorValue, 
+            loupeColor: loupeColorValue
+          })
     
         //   if(res) {
         //    const { error, paymentIntent } = await stripe.confirmCardPayment(res, {

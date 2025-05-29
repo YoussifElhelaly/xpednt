@@ -16,14 +16,15 @@ import loupeColorAtom from '../../atoms/loupeColor';
 
 export function Light3d1() {
 
-    const gltf = useLoader(GLTFLoader, '/loupes/3.5.glb');
-    const frame = useRecoilValue(selectFrameAtom)
-    const loupeColor = useRecoilValue(loupeColorAtom)
-
+  const gltf = useLoader(GLTFLoader, '/loupes/ER3.5X.glb');
+  const frame = useRecoilValue(selectFrameAtom)
+  const loupeColor = useRecoilValue(loupeColorAtom)
+  // Clone the scene to create a unique instance
+  const clonedScene = gltf.scene.clone();
   useEffect(() => {
     gltf.scene.traverse((child) => {
-
-      if (child.name == "柱体052" && child.isMesh) {
+      console.log(child)
+      if ((child.name == "柱体004" && child.isMesh) || (child.name == "柱体006" && child.isMesh)) {
         child.material.color = new THREE.Color(loupeColor); // Change color to red
         child.material.needsUpdate = true;
       }
@@ -33,14 +34,15 @@ export function Light3d1() {
       // }
     });
     // gltf.scene.current.parent.remove(gltf.current);
-  }, [gltf,loupeColor]);
+  }, [gltf, loupeColor]);
 
   return (
     <>
-      <primitive object={gltf.scene} position={[0.0, 0.015, handleYAxis(frame.id)]} rotation={[ 0,Math.PI / 2, 0]}/>
+      <primitive object={gltf.scene} position={[-0.03, 0.015, handleYAxis(frame.id)]} rotation={[0, Math.PI / 50, 0]} />
+      <primitive object={clonedScene} position={[0.03, 0.015, handleYAxis(frame.id)]} rotation={[0, Math.PI / 50, 0]} />
     </>
-  
+
   )
 }
 
-useGLTF.preload('/loupes/3.5.glb')
+useGLTF.preload('/loupes/ER3.5X.glb')
